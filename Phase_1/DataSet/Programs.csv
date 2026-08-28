@@ -1,0 +1,31 @@
+ProgramId,ProgramCode,ProgramName,Duration,IsActive
+cf7531b2-c2a6-45fc-ad0b-a7edbd390c97,FUL01,Full Stack Web Development,5,true
+59a6d057-f43f-4214-82a5-4f70745d2ad5,DAT02,Data Science & Machine Learning,6,true
+07e5c0c8-5b84-4d9c-9415-3f32d30d9fb8,UI/03,UI/UX Design Bootcamp,3,true
+4e540f28-f12a-41d4-9709-8755c96f144c,DIG04,Digital Marketing Professional,2,true
+525fadd1-ceee-46d4-b6c9-8d759fe1bbcc,CLO05,Cloud & DevOps Engineering,5,true
+6996f4f9-345a-4a2c-a2a7-b23e381eaf87,BUS06,Business Analytics,9,true
+df824abd-0606-4f9c-abad-e620feb70e17,CYB07,Cybersecurity Fundamentals,6,true
+257b6c00-e6fd-4ca5-9850-2bc1de5ec2f0,SPO08,Spoken English Mastery,5,true
+581b291c-2bf7-4932-abdd-6a269b477e4f,MOB09,Mobile App Development,6,true
+b7f0bb49-fd3d-4d27-8893-a2674ec1c6d7,PRO10,Project Management Professional,12,true
+5e03e5f9-508e-4636-b4ee-401e771656b9,FIN11,Financial Accounting,5,true
+4edb1324-99ce-46ce-b653-71c8e5b43c17,GRA12,Graphic Design Foundations,3,true
+9705fb0a-cc3f-4f50-bbd5-1321017f8f90,PYT13,Python Programming,9,true
+0847ac69-27bd-4023-a695-0c0dd31bc8ea,JAV14,Java Enterprise Development,6,true
+765d30fd-a305-49fa-b4f2-4980b74f061d,ART15,Artificial Intelligence Essentials,9,true
+c5ab6c6e-0b66-4554-b4c3-d51b6b1af1d3,BLO16,Blockchain Fundamentals,12,true
+62efebb5-0225-4d19-be1a-28aab79723e6,CON17,Content Writing & SEO,4,true
+845d4008-28a2-4100-a0e1-bbc32d68f893,HUM18,Human Resource Management,4,true
+97b7dcce-ac39-433d-ae2f-5eb1c07df9d2,SUP19,Supply Chain Management,5,true
+5748c059-9d7b-46ca-b79a-031a7a874a84,ROB20,Robotic Process Automation,6,true
+c6810b98-73d2-40ed-a3ac-203a0779d182,GAM21,Game Development with Unity,6,false
+5281f626-a47a-4a26-a982-c6cefcf4681b,ETH22,Ethical Hacking,6,true
+fa5b641f-d203-4a2b-bd47-f20084a5d921,PRO23,Product Management,2,true
+d8fd47d6-3f47-46d9-8830-d5a83586edcb,INV24,Investment Banking Fundamentals,3,false
+9325b646-8287-4df6-996a-41ec66b17582,VID25,Video Editing & Motion Graphics,9,true
+767740b7-433c-4802-8601-83709bcc60bd,GER26,German Language Certification,12,true
+c025efd7-3be1-4812-b39e-475d6ecfae4d,INT27,Interior Design Diploma,3,false
+9964521c-5c90-486b-9bcc-8401b50ed3bb,CUL28,Culinary Arts Foundation,9,true
+d29debd6-c789-49ce-be94-0110e09cde1a,PUB29,Public Speaking Mastery,2,true
+83c752ca-7595-4d4e-8916-0d59a7d5b746,DAT30,Data Engineering with Spark,5,true
