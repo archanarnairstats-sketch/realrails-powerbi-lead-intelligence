@@ -1,0 +1,79 @@
+table FactEnrollment
+	lineageTag: 823d1d85-d393-4798-9d91-68e62ae6b513
+
+	column EnrollmentId
+		dataType: string
+		lineageTag: 18b20608-a881-4c39-9d42-322e95b878c6
+		summarizeBy: none
+		sourceColumn: EnrollmentId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdmissionApplicationId
+		dataType: string
+		lineageTag: 4085a1a1-9825-4c40-802d-1443f1bd71eb
+		summarizeBy: none
+		sourceColumn: AdmissionApplicationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramId
+		dataType: string
+		lineageTag: 843529ae-8aa8-4c73-8641-b76800468e9b
+		summarizeBy: none
+		sourceColumn: ProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column StudentProfileId
+		dataType: string
+		lineageTag: f66df489-b342-4b30-afb3-ce373e0f35d4
+		summarizeBy: none
+		sourceColumn: StudentProfileId
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrolledAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bfb315e3-e290-4f3f-a3da-3827af0e7f83
+		summarizeBy: none
+		sourceColumn: EnrolledAtUtc
+
+		variation Variation
+			isDefault
+			relationship: 56e41fdc-35d1-4dd6-9da2-01d4fd276604
+			defaultHierarchy: LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrollmentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a3ea6f75-30a2-4ee7-877c-f7819ffd400c
+		summarizeBy: none
+		sourceColumn: EnrollmentDate
+
+		variation Variation
+			isDefault
+			relationship: e8e4241e-345b-4998-9777-e776b0ed4f1f
+			defaultHierarchy: LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactEnrollment = m
+		mode: import
+		source =
+				let
+				    Source = StudentEnrollments,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([EnrolledAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "EnrollmentDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

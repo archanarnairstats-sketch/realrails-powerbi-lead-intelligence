@@ -1,79 +1,130 @@
-Data_Quality_Findings.md
+&#x20;Phase 1 — Data Quality Findings
 
- Phase 1 — Data Quality Findings
 
-1. Overview
 
-The source CSV datasets were loaded into Power Query and reviewed before building the analytical model.
+&#x20;Dataset Overview
 
-2. Data Type Validation
 
-Important identifier columns were treated as identifiers rather than numeric measures.
 
-Date/time fields were reviewed and validated for date-based analysis.
+| Dataset | Record Count |
 
-Examples include:
-
- Lead identifiers
- Activity identifiers
- Follow-up identifiers
- Admission identifiers
- Enrollment identifiers
- User identifiers
- Program identifiers
-
-3. Lead Data
-
-The Leads data was reviewed for identifier and timestamp consistency.
-
-Meaningful transformations were documented in the Power Query transformation log.
-
-4. Lead Source
-
-Lead source values were reviewed and a separate DimLeadSource table was created to support consistent filtering and analysis.
-
-5. Counsellor Data
-
-Counsellor information was derived from the Users data and represented through DimCounsellor.
-
-A CounsellorName field was created for reporting.
-
-6. Program Data
-
-Program information was separated into DimProgram to support program-level analysis.
-
-7. Date and Time Fields
-
-Source timestamps such as CreatedAtUtc contain both date and time.
-
-Date-only fields were created where required for relationships with DimDate.
-
-Examples:
-
- FactLead[CreatedDate]
- FactAdmission[AdmissionDate]
- FactEnrollment[EnrollmentDate]
-
-8. Duplicate and Relationship Checks
-
-Key identifier columns were reviewed for uniqueness where appropriate.
-
-Relationships were checked to avoid unnecessary many-to-many relationships and ambiguous relationship paths.
-
-9. Validation Results
-
-The following validation values were obtained:
-
-| Metric | Result |
 |---|---:|
-| Total Leads | 150 |
-| Total Admissions | 128 |
-| Total Enrollments | 118 |
-| Admission Conversion Rate | 85.33% |
-| Enrollment Conversion Rate | 78.67% |
 
-10. Conclusion
+| Leads | 150 |
 
-The datasets were prepared for Phase 1 modeling and reporting.
+| Admission Applications | 128 |
 
-The model was validated using temporary Power BI visuals before proceeding to dashboard development.
+| Student Enrollments | 118 |
+
+| Users / Counsellors | 30 |
+
+| Programs | 30 |
+
+| Lead Activities | 153 |
+
+
+
+&#x20;Observed Data-Quality Findings
+
+
+
+&#x20;1. Null / Missing Values
+
+
+
+&#x20;FactLead\[AssignedCounsellorId]`: 8 Leads have null values.
+
+&#x20;FactLead\[InterestedProgramId]`: 8 Leads have null values.
+
+&#x20;FactLead\[LeadSource]`: 5 Leads contain an empty-string value.
+
+
+
+These records were retained because they represent valid source-system records and were not removed during transformation.
+
+
+
+&#x20;2. Duplicate-Key Checks
+
+
+
+&#x20;Lead primary key (`FactLead\[Id]`): No duplicate keys observed.
+
+&#x20;Admission application key: No duplicate keys observed.
+
+&#x20;Enrollment key: No duplicate keys observed.
+
+&#x20;Program key: No duplicate keys observed.
+
+&#x20;Counsellor/User key: No duplicate keys observed.
+
+&#x20;Lead Activity data contained 3 exact duplicate rows. These were identified during data-quality review.
+
+
+
+&#x20;3. Foreign-Key / Referential-Integrity Checks
+
+
+
+The documented foreign-key relationships were checked.
+
+
+
+&#x20;Admission → Lead: 0 invalid foreign-key records.
+
+&#x20;Enrollment → Admission: 0 invalid foreign-key records.
+
+&#x20;Enrollment → Program: 0 invalid foreign-key records.
+
+&#x20;Lead → Counsellor: 0 invalid non-null foreign-key records.
+
+&#x20;Lead → Program: 0 invalid non-null foreign-key records.
+
+&#x20;Lead → Lead Source: 0 invalid non-null foreign-key records.
+
+
+
+&#x20;4. Relationship Validation
+
+
+
+The analytical model was reviewed for:
+
+
+
+&#x20;Correct one-to-many cardinality.
+
+&#x20;Appropriate single-direction filtering.
+
+&#x20;Admission → Lead path.
+
+&#x20;Enrollment → Admission → Lead analytical path.
+
+&#x20;Date dimension relationships.
+
+
+
+No unresolved invalid relationship records were identified after the final model corrections.
+
+
+
+&#x20;Handling / Assumptions
+
+
+
+&#x20;Null counsellor and program references were retained rather than artificially assigned.
+
+&#x20;Empty LeadSource values were retained as source-data quality issues.
+
+&#x20;Duplicate Lead Activity rows were documented during quality review.
+
+&#x20;No source records were fabricated or manually assigned to resolve missing relationships.
+
+
+
+&#x20;Phase 1 Conclusion
+
+
+
+The major source-data quality issues were identified and documented. Referential-integrity checks and analytical relationships were validated before proceeding to the next phase.
+

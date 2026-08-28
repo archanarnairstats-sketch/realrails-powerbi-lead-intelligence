@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "06d259e7b450ee5cd690",
+  "position": {
+    "x": 651.42857142857144,
+    "y": 0,
+    "z": 2000,
+    "height": 720,
+    "width": 384.28571428571433,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProgram"
+                    }
+                  },
+                  "Property": "ProgramName"
+                }
+              },
+              "queryRef": "DimProgram.ProgramName",
+              "nativeQueryRef": "ProgramName"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimProgram"
+                  }
+                },
+                "Property": "ProgramName"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
