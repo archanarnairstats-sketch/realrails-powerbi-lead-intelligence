@@ -37,7 +37,14 @@ table _Measures
 
 	measure 'Contacted Leads' =
 			
-			DISTINCTCOUNT(FactLeadActivity[LeadId])
+			CALCULATE(
+			    DISTINCTCOUNT(FactLeadActivity[LeadId]),
+			    FactLeadActivity[ActivityType] IN {
+			        "FirstCall",
+			        "SecondCall",
+			        "ThirdCall"
+			    }
+			)
 		formatString: 0
 		lineageTag: d6038074-d520-43cd-9e9e-f4afd7d2f39c
 
