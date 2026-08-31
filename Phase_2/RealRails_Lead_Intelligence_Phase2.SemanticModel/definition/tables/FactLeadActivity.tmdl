@@ -1,0 +1,71 @@
+table FactLeadActivity
+	lineageTag: 60c139a1-64be-4866-8aac-c21e1aa6016e
+
+	column ActivityId
+		dataType: string
+		lineageTag: f7511316-da63-460e-8165-9b6789940d83
+		summarizeBy: none
+		sourceColumn: ActivityId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 0f331afe-6cfa-4db0-bcbd-638af18d0cba
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActivityType
+		dataType: string
+		lineageTag: 051968c3-9937-4d38-a4ef-ada391255d9e
+		summarizeBy: none
+		sourceColumn: ActivityType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ed30f8b8-52af-4464-838a-47a2048eb4bb
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		variation Variation
+			isDefault
+			relationship: 80593919-df98-4873-9ca4-335e12700112
+			defaultHierarchy: LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCompleted
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: baf685a1-40ca-4438-aef1-082eb154c66e
+		summarizeBy: none
+		sourceColumn: IsCompleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column CallDurationSeconds
+		dataType: int64
+		formatString: 0
+		lineageTag: 48b7693e-6e6e-4708-89cf-27e373fb04fe
+		summarizeBy: sum
+		sourceColumn: CallDurationSeconds
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactLeadActivity = m
+		mode: import
+		source =
+				let
+				    Source = LeadActivities
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

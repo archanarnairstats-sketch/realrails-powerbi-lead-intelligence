@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "RealRails_Lead_Intelligence_Phase2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e85e32b4-5573-4276-bb77-4140150d757b"
+  }
+}

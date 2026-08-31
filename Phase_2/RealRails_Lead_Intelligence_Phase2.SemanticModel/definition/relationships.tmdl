@@ -1,0 +1,115 @@
+relationship b6dacd16-5a3b-49c8-8ca9-fdf3e21bad94
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.Date
+
+relationship 9dbd17a1-993b-4efd-be2a-ccba059c327f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactLead.CreatedAtUtc
+	toColumn: LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.Date
+
+relationship 80593919-df98-4873-9ca4-335e12700112
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactLeadActivity.CreatedAtUtc
+	toColumn: LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.Date
+
+relationship 175b8ce6-068e-41dc-9a5e-78a263125dd6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactFollowUp.FollowUpDateUtc
+	toColumn: LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.Date
+
+relationship e0f8131f-80da-424c-aa61-0577684984a9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactAdmission.CreatedAtUtc
+	toColumn: LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.Date
+
+relationship 999b84e0-3e8c-45de-9a6b-93b1a33389b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactAdmission.SubmittedAt
+	toColumn: LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.Date
+
+relationship 6cb80dc6-2827-49d2-a2e5-f6d1a69086e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactAdmission.ApprovedAt
+	toColumn: LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.Date
+
+relationship 56e41fdc-35d1-4dd6-9da2-01d4fd276604
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactEnrollment.EnrolledAtUtc
+	toColumn: LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.Date
+
+relationship 481346bd-77cc-4bcb-8300-55b8d9f4d2a3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactStatusHistory.ChangedAtUtc
+	toColumn: LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.Date
+
+relationship AutoDetected_7c21dbce-b1eb-444c-b8f9-d4ce82fd4ff4
+	fromColumn: FactLead.LeadSource
+	toColumn: DimLeadSource.LeadSource
+
+relationship AutoDetected_6b57a5d8-3a72-48e7-9227-2cf30e0c7e2e
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: FactAdmission.LeadId
+	toColumn: FactFollowUp.LeadId
+
+relationship AutoDetected_c7965678-0baf-4f7f-adaa-82c06fc76d35
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: FactStatusHistory.LeadId
+	toColumn: FactFollowUp.LeadId
+
+relationship AutoDetected_adff4fd8-c76d-4383-932c-69e70be163f9
+	isActive: false
+	fromColumn: FactEnrollment.ProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 80efdfaf-958d-feb7-efa7-cefe658f7289
+	fromColumn: FactLead.AssignedCounsellorId
+	toColumn: DimCounsellor.UserId
+
+relationship 50b6b42d-b0d6-5c98-21ef-89e0b2ed3d10
+	fromColumn: FactLead.InterestedProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 1b27ffff-e061-b315-de57-c5d91e047028
+	isActive: false
+	fromColumn: FactAdmission.AppliedProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 0e8ca7d7-6996-6c85-57d6-c33f8dde6d7f
+	fromColumn: FactFollowUp.LeadId
+	toColumn: FactLead.Id
+
+relationship 3542fb1a-ad07-5df6-633c-d3638319243e
+	fromColumn: FactAdmission.LeadId
+	toColumn: FactLead.Id
+
+relationship 72805460-e1b9-343d-a49e-231b1d578601
+	fromColumn: FactStatusHistory.LeadId
+	toColumn: FactLead.Id
+
+relationship db56ce10-d62f-af3c-841e-14ff122007f2
+	fromColumn: FactLeadActivity.LeadId
+	toColumn: FactLead.Id
+
+relationship 68496c1d-a9c5-aade-6402-7c180b62efe6
+	fromColumn: FactLead.CreatedDate
+	toColumn: DimDate.Date
+
+relationship 31b92493-d04f-412f-b5a8-74c6011eeb2a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactAdmission.AdmissionDate
+	toColumn: LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.Date
+
+relationship e8e4241e-345b-4998-9777-e776b0ed4f1f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactEnrollment.EnrollmentDate
+	toColumn: LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.Date
+
+relationship 28112676-281e-18f7-5788-7e092f69ba54
+	fromColumn: FactAdmission.AdmissionApplicationId
+	toColumn: FactEnrollment.AdmissionApplicationId
+

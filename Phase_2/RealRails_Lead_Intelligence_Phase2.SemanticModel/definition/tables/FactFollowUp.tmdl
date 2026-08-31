@@ -1,0 +1,62 @@
+table FactFollowUp
+	lineageTag: dbb2460d-a2e5-4108-9687-70d6fd03f9ef
+
+	column FollowUpId
+		dataType: string
+		lineageTag: a0279354-c8c4-445b-be6b-a31c983d374d
+		summarizeBy: none
+		sourceColumn: FollowUpId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: e25862a0-6b2c-4c92-a80e-d43dccdb02a5
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column FollowUpDateUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9dd1b21b-e37f-4204-938c-19c389d49d86
+		summarizeBy: none
+		sourceColumn: FollowUpDateUtc
+
+		variation Variation
+			isDefault
+			relationship: 175b8ce6-068e-41dc-9a5e-78a263125dd6
+			defaultHierarchy: LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCompleted
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b0ee3362-1073-4c62-abe7-ad7c89af2271
+		summarizeBy: none
+		sourceColumn: IsCompleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		lineageTag: ccb0e2b2-d900-4c97-9475-64dd58924f34
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactFollowUp = m
+		mode: import
+		source =
+				let
+				    Source = LeadFollowUps
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,25 @@
+table DimLeadSource
+	lineageTag: 563ca5c9-15c1-4377-8461-6b5f4fb36221
+
+	column LeadSource
+		dataType: string
+		lineageTag: 3055dc06-b20f-4ee7-8e91-5f3e0f10cc90
+		summarizeBy: none
+		sourceColumn: LeadSource
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimLeadSource = m
+		mode: import
+		source =
+				let
+				    Source = Leads,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"LeadSource"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

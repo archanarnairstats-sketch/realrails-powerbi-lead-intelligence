@@ -1,0 +1,84 @@
+table DimDate
+	lineageTag: da22f77f-363b-4c4f-bf5a-e66f34e6ac6b
+
+	column Date
+		formatString: General Date
+		lineageTag: d13a55a3-3d9d-49ce-a890-7cc944fdf717
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: b6dacd16-5a3b-49c8-8ca9-fdf3e21bad94
+			defaultHierarchy: LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 27041e08-41b1-43f7-86e6-52633f3c7301
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: ba1a3825-f86c-4975-81a5-0b27f88798ae
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: e93f476a-3f2d-4726-bd04-90b2965cc090
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month
+		lineageTag: 31e37955-6b22-4cdb-875f-ba5da74d5a46
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year-Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: a47fcc26-f5b8-49b3-9cc8-8865984a1fbd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: 7abe59a5-58fc-4c93-96ba-77efdb42482b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDAR(DATE(2025,1,1), DATE(2026,12,31)),
+				    "Year", YEAR([Date]),
+				    "Month Number", MONTH([Date]),
+				    "Month", FORMAT([Date], "MMMM"),
+				    "Year-Month", FORMAT([Date], "YYYY-MM"),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "Day", DAY([Date])
+				)
+
+	annotation PBI_Id = 487511938e1b44c9b6e86d0e50989a0e
+

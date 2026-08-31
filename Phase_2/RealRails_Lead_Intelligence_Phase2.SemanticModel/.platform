@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "RealRails_Lead_Intelligence_Phase2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "61447f05-b7fc-4e56-a892-f033303e44b6"
+  }
+}

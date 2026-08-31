@@ -1,0 +1,39 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Leads","AdmissionApplications","LeadActivities","LeadFollowUps","LeadStatusHistory","Programs","StudentEnrollments","Users","DimLeadSource","FactLead","FactLeadActivity","FactFollowUp","FactAdmission","FactEnrollment","FactStatusHistory","DimCounsellor","DimProgram"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579
+ref table DimLeadSource
+ref table DimDate
+ref table LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd
+ref table FactLead
+ref table LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40
+ref table FactLeadActivity
+ref table LocalDateTable_58db9876-e770-416d-af41-5b2adf760113
+ref table FactFollowUp
+ref table LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b
+ref table FactAdmission
+ref table LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9
+ref table LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97
+ref table LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823
+ref table FactEnrollment
+ref table LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533
+ref table FactStatusHistory
+ref table LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145
+ref table DimCounsellor
+ref table DimProgram
+ref table LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2
+ref table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
+
+ref cultureInfo en-US
+
