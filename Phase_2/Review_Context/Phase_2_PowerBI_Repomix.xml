@@ -40,7 +40,7 @@ The content is organized as follows:
 </file_summary>
 
 <directory_structure>
-[RealRails_Lead_Intelligence_Phase2.Report]/
+Phase2_Working.Report/
   definition/
     pages/
       21f7c21bab4791213d2e/
@@ -57,13 +57,56 @@ The content is organized as follows:
             visual.json
           aa9253636db7bd432581/
             visual.json
-          e4c72110ca0b1eacd1de/
+          c083360443b7f86bbcc7/
             visual.json
-          f45257eb198e33f844d5/
+          e4c72110ca0b1eacd1de/
             visual.json
           f4f14219e66f4dad3f0a/
             visual.json
           f743d410d43f6ecb0592/
+            visual.json
+        page.json
+      344deb90a8026c89876d/
+        visuals/
+          0d94483cd8282e294e61/
+            visual.json
+          2456d11b12ace8264336/
+            visual.json
+          24e416202a40c65f6d65/
+            visual.json
+          2d5b9c130b77a36e372f/
+            visual.json
+          30f5f694b82d082097ed/
+            visual.json
+          31a77082367134e164b5/
+            visual.json
+          32ccfdd637d69a7fe692/
+            visual.json
+          39d18ca4b81f62b6afae/
+            visual.json
+          4f2c6b3fe76274f3fe38/
+            visual.json
+          6891b5380f4740a10f9c/
+            visual.json
+          88b2b68629c1f780c6a9/
+            visual.json
+          9e10456150375765f236/
+            visual.json
+          c039063e1e7679c7bd95/
+            visual.json
+          c895891d3c76c4a38747/
+            visual.json
+          c90dae361cf3a0a267f9/
+            visual.json
+          cd3fa4f96a4471bac716/
+            visual.json
+          de46acde02855249635c/
+            visual.json
+          e98bf9b88da5526dca66/
+            visual.json
+          f5cca8cfab60b1a14811/
+            visual.json
+          f818c2d05d57102d68de/
             visual.json
         page.json
       pages.json
@@ -77,15 +120,14 @@ The content is organized as follows:
         AccessibleDefault.json
   .platform
   definition.pbir
-
-[RealRails_Lead_Intelligence_Phase2.SemanticModel]/
+Phase2_Working.SemanticModel/
   .pbi/
     editorSettings.json
   definition/
     cultures/
       en-US.tmdl
     tables/
-      DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579.tmdl
+      _Measures.tmdl
       DimCounsellor.tmdl
       DimDate.tmdl
       DimLeadSource.tmdl
@@ -96,17 +138,6 @@ The content is organized as follows:
       FactLead.tmdl
       FactLeadActivity.tmdl
       FactStatusHistory.tmdl
-      LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.tmdl
-      LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.tmdl
-      LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.tmdl
-      LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.tmdl
-      LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.tmdl
-      LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.tmdl
-      LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.tmdl
-      LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.tmdl
-      LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.tmdl
-      LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.tmdl
-      LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.tmdl
     database.tmdl
     expressions.tmdl
     model.tmdl
@@ -114,12 +145,13 @@ The content is organized as follows:
   .platform
   definition.pbism
   diagramLayout.json
+Phase2_Working.pbip
 </directory_structure>
 
 <files>
 This section contains the contents of the repository's files.
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/06d259e7b450ee5cd690/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/06d259e7b450ee5cd690/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "06d259e7b450ee5cd690",
@@ -196,7 +228,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/72b4f2f5ef5290462b76/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/72b4f2f5ef5290462b76/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "72b4f2f5ef5290462b76",
@@ -255,7 +287,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/8f366c919f43149f82e3/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/8f366c919f43149f82e3/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "8f366c919f43149f82e3",
@@ -314,7 +346,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a460a9d8e1a6a672b15f/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/a460a9d8e1a6a672b15f/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "a460a9d8e1a6a672b15f",
@@ -391,7 +423,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a830ca765afeb38ca9de/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/a830ca765afeb38ca9de/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "a830ca765afeb38ca9de",
@@ -450,7 +482,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/aa9253636db7bd432581/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/aa9253636db7bd432581/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "aa9253636db7bd432581",
@@ -510,7 +542,66 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/c083360443b7f86bbcc7/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c083360443b7f86bbcc7",
+  "position": {
+    "x": 362.26536457897117,
+    "y": 584.56456557061256,
+    "z": 9000,
+    "height": 135.84951171711421,
+    "width": 277.18789259451586,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Admission → Enrollment Rate"
+                }
+              },
+              "queryRef": "_Measures.Admission → Enrollment Rate",
+              "nativeQueryRef": "Admission → Enrollment Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Admission → Enrollment Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "e4c72110ca0b1eacd1de",
@@ -518,8 +609,8 @@ This section contains the contents of the repository's files.
     "x": 424.01514263220491,
     "y": 314.23775942645608,
     "z": 0,
-    "height": 292.28228278530628,
-    "width": 167.410509388767,
+    "height": 168.78272667883886,
+    "width": 179.76046499941373,
     "tabOrder": 0
   },
   "visual": {
@@ -608,128 +699,11 @@ This section contains the contents of the repository's files.
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9a95565defa153fb4280",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DimLeadSource"
-              }
-            },
-            "Property": "LeadSource"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0b79586340f64c07f9d6",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "FactLead"
-                  }
-                },
-                "Property": "Id"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f45257eb198e33f844d5/visual.json">
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "f45257eb198e33f844d5",
-  "position": {
-    "x": 395.19857954069585,
-    "y": 495.37044171594169,
-    "z": 8001,
-    "height": 225.04363557178513,
-    "width": 241.51024305264747,
-    "tabOrder": 8001
-  },
-  "visual": {
-    "visualType": "slicer",
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FactLead"
-                    }
-                  },
-                  "Property": "Status"
-                }
-              },
-              "queryRef": "FactLead.Status",
-              "nativeQueryRef": "Status",
-              "active": true
-            }
-          ]
-        }
-      }
-    },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Basic'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
-        }
-      ]
-    },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3a58d6dbf4d62a5d096b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FactLead"
-              }
-            },
-            "Property": "Status"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
-}
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f4f14219e66f4dad3f0a/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/f4f14219e66f4dad3f0a/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f4f14219e66f4dad3f0a",
@@ -803,16 +777,16 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f743d410d43f6ecb0592/visual.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/f743d410d43f6ecb0592/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f743d410d43f6ecb0592",
   "position": {
     "x": 0,
-    "y": 585,
+    "y": 584.56456557061256,
     "z": 8000,
-    "height": 135,
-    "width": 397.5,
+    "height": 135.84951171711421,
+    "width": 362.26536457897117,
     "tabOrder": 8000
   },
   "visual": {
@@ -862,7 +836,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/page.json">
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/page.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "21f7c21bab4791213d2e",
@@ -873,17 +847,1303 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/pages.json">
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/0d94483cd8282e294e61/visual.json">
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
-  "pageOrder": [
-    "21f7c21bab4791213d2e"
-  ],
-  "activePageName": "21f7c21bab4791213d2e"
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "0d94483cd8282e294e61",
+  "position": {
+    "x": 1059.3517479354764,
+    "y": 359.52092999882746,
+    "z": 10000,
+    "height": 101.54407946531768,
+    "width": 220.92698370156955,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Admission Done Leads"
+                }
+              },
+              "queryRef": "_Measures.Admission Done Leads",
+              "nativeQueryRef": "Admission Done Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Admission Done Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/report.json">
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/2456d11b12ace8264336/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "2456d11b12ace8264336",
+  "position": {
+    "x": 979.7631451113084,
+    "y": 19.211042061006047,
+    "z": 4000,
+    "height": 113.89403507596442,
+    "width": 282.67676175480329,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overdue Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Overdue Follow-Ups",
+              "nativeQueryRef": "Overdue Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Overdue Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/24e416202a40c65f6d65/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "24e416202a40c65f6d65",
+  "position": {
+    "x": 385.5930585101928,
+    "y": 358.14871270875562,
+    "z": 9000,
+    "height": 100.17186217524582,
+    "width": 201.7159416405635,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "31-60 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.31-60 Days Leads",
+              "nativeQueryRef": "31-60 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "31-60 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/2d5b9c130b77a36e372f/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "2d5b9c130b77a36e372f",
+  "position": {
+    "x": 727.27516373808612,
+    "y": 249.74354679307862,
+    "z": 13000,
+    "height": 109.77738320574885,
+    "width": 220.92698370156955,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Interested Leads"
+                }
+              },
+              "queryRef": "_Measures.Interested Leads",
+              "nativeQueryRef": "Interested Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Interested Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/30f5f694b82d082097ed/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "30f5f694b82d082097ed",
+  "position": {
+    "x": 989.36866614181145,
+    "y": 133.10507713697046,
+    "z": 16000,
+    "height": 104.2885140454614,
+    "width": 290.91006549523445,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Unattended Leads"
+                }
+              },
+              "queryRef": "_Measures.Unattended Leads",
+              "nativeQueryRef": "Unattended Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Unattended Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/31a77082367134e164b5/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "31a77082367134e164b5",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 461.06500946414513,
+    "z": 19000,
+    "height": 101.54407946531768,
+    "width": 163.29385751855142,
+    "tabOrder": 19000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Total Leads"
+                }
+              },
+              "queryRef": "DimCounsellor.Total Leads",
+              "nativeQueryRef": "Total Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Total Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/32ccfdd637d69a7fe692/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "32ccfdd637d69a7fe692",
+  "position": {
+    "x": 0,
+    "y": 4.1166518702155814,
+    "z": 5000,
+    "height": 141.33838087740165,
+    "width": 211.32146267106654,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactLead"
+                    }
+                  },
+                  "Property": "Lead Age Bucket"
+                }
+              },
+              "queryRef": "FactLead.Lead Age Bucket",
+              "nativeQueryRef": "Lead Age Bucket"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ageing validation'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/39d18ca4b81f62b6afae/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "39d18ca4b81f62b6afae",
+  "position": {
+    "x": 730.01959831822978,
+    "y": 133.10507713697046,
+    "z": 17000,
+    "height": 104.2885140454614,
+    "width": 249.74354679307862,
+    "tabOrder": 17000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Pending Follow-Up Leads"
+                }
+              },
+              "queryRef": "_Measures.Pending Follow-Up Leads",
+              "nativeQueryRef": "Pending Follow-Up Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Pending Follow-Up Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/4f2c6b3fe76274f3fe38/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "4f2c6b3fe76274f3fe38",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 249.74354679307862,
+    "z": 11000,
+    "height": 109.77738320574885,
+    "width": 260.72128511365349,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Lost Leads"
+                }
+              },
+              "queryRef": "_Measures.Lost Leads",
+              "nativeQueryRef": "Lost Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Lost Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/6891b5380f4740a10f9c/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6891b5380f4740a10f9c",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 358.14871270875562,
+    "z": 7000,
+    "height": 102.91629675538954,
+    "width": 174.27159583912629,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "0-7 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.0-7 Days Leads",
+              "nativeQueryRef": "0-7 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "0-7 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/88b2b68629c1f780c6a9/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "88b2b68629c1f780c6a9",
+  "position": {
+    "x": 437.7373155329235,
+    "y": 27.444345801437212,
+    "z": 1000,
+    "height": 105.66073133553327,
+    "width": 253.8601986632942,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Completed Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Completed Follow-Ups",
+              "nativeQueryRef": "Completed Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Completed Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/9e10456150375765f236/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "9e10456150375765f236",
+  "position": {
+    "x": 695.71416606643334,
+    "y": 19.211042061006047,
+    "z": 2000,
+    "height": 113.89403507596442,
+    "width": 284.04897904487513,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Pending Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Pending Follow-Ups",
+              "nativeQueryRef": "Pending Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Pending Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c039063e1e7679c7bd95/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c039063e1e7679c7bd95",
+  "position": {
+    "x": 472.04274778472006,
+    "y": 249.74354679307862,
+    "z": 12000,
+    "height": 109.77738320574885,
+    "width": 263.46571969379721,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "New Leads"
+                }
+              },
+              "queryRef": "_Measures.New Leads",
+              "nativeQueryRef": "New Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "New Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c895891d3c76c4a38747/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c895891d3c76c4a38747",
+  "position": {
+    "x": 201.7159416405635,
+    "y": 133.10507713697046,
+    "z": 3000,
+    "height": 116.63846965610814,
+    "width": 270.32680614415654,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Follow-Up Completion Rate"
+                }
+              },
+              "queryRef": "_Measures.Follow-Up Completion Rate",
+              "nativeQueryRef": "Follow-Up Completion Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Follow-Up Completion Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c90dae361cf3a0a267f9/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c90dae361cf3a0a267f9",
+  "position": {
+    "x": 0,
+    "y": 185.24933415970119,
+    "z": 18000,
+    "height": 535.16474312802563,
+    "width": 201.7159416405635,
+    "tabOrder": 18000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactLead"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "FactLead.Status",
+              "nativeQueryRef": "Status",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "FactLead",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "Status"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Lost'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/cd3fa4f96a4471bac716/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "cd3fa4f96a4471bac716",
+  "position": {
+    "x": 948.20214743965562,
+    "y": 249.74354679307862,
+    "z": 14000,
+    "height": 109.77738320574885,
+    "width": 332.07658419739028,
+    "tabOrder": 14000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Contacted Status Leads"
+                }
+              },
+              "queryRef": "_Measures.Contacted Status Leads",
+              "nativeQueryRef": "Contacted Status Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Contacted Status Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/de46acde02855249635c/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "de46acde02855249635c",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 27.444345801437212,
+    "z": 0,
+    "height": 113.89403507596442,
+    "width": 204.46037622070722,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Total Follow-Ups",
+              "nativeQueryRef": "Total Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Total Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/e98bf9b88da5526dca66/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e98bf9b88da5526dca66",
+  "position": {
+    "x": 472.04274778472006,
+    "y": 133.10507713697046,
+    "z": 15000,
+    "height": 104.2885140454614,
+    "width": 263.46571969379721,
+    "tabOrder": 15000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overdue Follow-Up Leads"
+                }
+              },
+              "queryRef": "_Measures.Overdue Follow-Up Leads",
+              "nativeQueryRef": "Overdue Follow-Up Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Overdue Follow-Up Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/f5cca8cfab60b1a14811/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f5cca8cfab60b1a14811",
+  "position": {
+    "x": 603.77560763161864,
+    "y": 359.52092999882746,
+    "z": 6000,
+    "height": 108.40516591567699,
+    "width": 208.57702809092279,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "61+ Days Leads"
+                }
+              },
+              "queryRef": "_Measures.61+ Days Leads",
+              "nativeQueryRef": "61+ Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "61+ Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/f818c2d05d57102d68de/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f818c2d05d57102d68de",
+  "position": {
+    "x": 812.35263572254144,
+    "y": 359.52092999882746,
+    "z": 8000,
+    "height": 108.40516591567699,
+    "width": 246.9991122129349,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "8-30 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.8-30 Days Leads",
+              "nativeQueryRef": "8-30 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "8-30 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/page.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "344deb90a8026c89876d",
+  "displayName": "VALIDATION",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/pages.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "21f7c21bab4791213d2e",
+    "344deb90a8026c89876d"
+  ],
+  "activePageName": "344deb90a8026c89876d"
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/report.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
@@ -945,19 +2205,21 @@ This section contains the contents of the repository's files.
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": true,
-    "useDefaultAggregateDisplayName": true
+    "useDefaultAggregateDisplayName": true,
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
   }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/version.json">
+<file path="Phase2_Working.Report/definition/version.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json",
   "version": "2.0.0"
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BaseThemes/CY26SU05.json">
+<file path="Phase2_Working.Report/StaticResources/SharedResources/BaseThemes/CY26SU05.json">
 {
   "name": "CY26SU05",
   "dataColors": [
@@ -1944,7 +3206,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BuiltInThemes/AccessibleDefault.json">
+<file path="Phase2_Working.Report/StaticResources/SharedResources/BuiltInThemes/AccessibleDefault.json">
 {
   "name": "CY23SU02",
   "dataColors": [
@@ -1973,32 +3235,32 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/.platform">
+<file path="Phase2_Working.Report/.platform">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Report",
-    "displayName": "RealRails_Lead_Intelligence_Phase2"
+    "displayName": "Phase2_Working"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "e85e32b4-5573-4276-bb77-4140150d757b"
+    "logicalId": "cb8e7932-28ba-4288-a239-60534bfca891"
   }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.Report/definition.pbir">
+<file path="Phase2_Working.Report/definition.pbir">
 {
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../RealRails_Lead_Intelligence_Phase2.SemanticModel"
+      "path": "../Phase2_Working.SemanticModel"
     }
   }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/.pbi/editorSettings.json">
+<file path="Phase2_Working.SemanticModel/.pbi/editorSettings.json">
 {
   "version": "1.0",
   "autodetectRelationships": true,
@@ -2009,131 +3271,238 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/cultures/en-US.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/cultures/en-US.tmdl">
 cultureInfo en-US
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579.tmdl">
-table DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579
-	isHidden
-	isPrivate
-	lineageTag: 77e2c7e1-26d2-4df0-9e60-ef6ced64b4ef
+<file path="Phase2_Working.SemanticModel/definition/tables/_Measures.tmdl">
+table _Measures
+	lineageTag: eaaad2b2-3a3b-42db-9d6f-d45fe9c0a9d5
 
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 7e55f18e-180c-4db2-9b75-d6ca70f68c47
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
+	measure 'Leads Reaching Admission' =
+			
+			DISTINCTCOUNT(FactAdmission[LeadId])
 		formatString: 0
-		lineageTag: 282970d7-99af-42f7-a1d3-9ae2935a0681
-		dataCategory: Years
-		summarizeBy: none
+		lineageTag: 0a838099-8518-4b42-a016-58490dc3785d
 
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
+	measure 'Leads Reaching Enrollment' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactAdmission[LeadId]),
+			    TREATAS(
+			        VALUES(FactEnrollment[AdmissionApplicationId]),
+			        FactAdmission[AdmissionApplicationId]
+			    )
+			)
 		formatString: 0
-		lineageTag: 83982efc-bb61-4635-94b7-b9a10c415dfe
-		dataCategory: MonthOfYear
-		summarizeBy: none
+		lineageTag: 2c5cb25c-cf92-4573-9ccc-d71b339b7324
 
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 1cd9a3ac-402c-469f-9f8d-f8ca4f0d0838
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
+	measure 'Admissions Reaching Enrollment' =
+			
+			DISTINCTCOUNT(FactEnrollment[AdmissionApplicationId])
 		formatString: 0
-		lineageTag: 6f208ebe-b301-4da6-9e6a-2dbaf82a92df
-		dataCategory: QuarterOfYear
-		summarizeBy: none
+		lineageTag: 5ac09151-9dbe-4231-81ac-5b252923f2c2
 
-		annotation SummarizationSetBy = User
+	measure 'Admission → Enrollment Rate' =
+			
+			DIVIDE(
+			    [Admissions Reaching Enrollment],
+			    [Total Admissions],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 75ecdb5b-3dd7-4f90-ba65-9931f85679a7
 
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: c6976fec-6dd7-4c0e-baef-d7469b6492fc
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
+	measure 'Contacted Leads' =
+			
+			DISTINCTCOUNT(FactLeadActivity[LeadId])
 		formatString: 0
-		lineageTag: 0735db2a-7f56-46e6-9e3b-9cedfbf06290
-		dataCategory: DayOfMonth
-		summarizeBy: none
+		lineageTag: d6038074-d520-43cd-9e9e-f4afd7d2f39c
 
-		annotation SummarizationSetBy = User
+	measure 'Unattended Leads' =
+			
+			[Total Leads] - [Contacted Leads]
+		formatString: 0
+		lineageTag: 2411967d-7f39-45a0-8a9e-5c95f1634466
 
-		annotation TemplateId = Day
+	measure 'Total Follow-Ups' =
+			
+			COUNTROWS(FactFollowUp)
+		formatString: 0
+		lineageTag: d82fe36d-1b63-499a-ab89-db33ebeeb7c0
 
-	hierarchy 'Date Hierarchy'
-		lineageTag: 83b6e641-0eed-4e41-a460-4fc7799ea63b
+	measure 'Completed Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = TRUE()
+			)
+		formatString: 0
+		lineageTag: db538bbe-d375-4b5b-8780-6654caf7c7d7
 
-		level Year
-			lineageTag: 0cf00f39-2d19-45a7-999a-4c30cee28f1f
-			column: Year
+	measure 'Pending Follow-Ups' =
+			
+			[Total Follow-Ups] - [Completed Follow-Ups]
+		formatString: 0
+		lineageTag: 79e8779e-58cf-4f0d-a33d-6e4dc01b04d9
 
-		level Quarter
-			lineageTag: b45f6174-c2a6-41e7-898d-9c0045ad2ef0
-			column: Quarter
+	measure 'Follow-Up Completion Rate' =
+			
+			DIVIDE(
+			    [Completed Follow-Ups],
+			    [Total Follow-Ups],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 05c265ab-8a1d-4ff0-9afb-1a15a911ee9c
 
-		level Month
-			lineageTag: 423214bb-eb24-459c-8182-23883370a1f5
-			column: Month
+	measure 'Overdue Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: 5b5473c6-8030-436b-8a1a-127284a8c42b
 
-		level Day
-			lineageTag: f6405d8c-29d0-400d-9585-29c40af16555
-			column: Day
+	measure '61+ Days Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Lead Age Bucket] = "61+ Days"
+			)
+		formatString: 0
+		lineageTag: 3d245e61-c177-4655-9e24-fd6960084675
 
-		annotation TemplateId = DateHierarchy
+	measure '0-7 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "0-7 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1e958e8f-1b89-4743-b015-8430ed989863
 
-	partition DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579 = calculated
+	measure '8-30 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "8-30 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1f3fbf73-e141-4528-9795-c5f080e5f915
+
+	measure '31-60 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "31-60 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: b78e2470-3898-4901-b569-82e9fa2555fa
+
+	measure 'Admission Done Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "AdmissionDone"
+			)
+		formatString: 0
+		lineageTag: b3fe3fe6-9e77-40d5-a7ab-86b78bb02508
+
+	measure 'Lost Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Lost"
+			)
+		formatString: 0
+		lineageTag: f31a2517-93fe-4742-ae61-892daf5bedb4
+
+	measure 'New Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "New"
+			)
+		formatString: 0
+		lineageTag: 7f0f29c6-3e92-45ae-98dc-58757ebe38b5
+
+	measure 'Interested Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Interested"
+			)
+		formatString: 0
+		lineageTag: a04dcc6d-ec5d-403f-894a-976d0cada129
+
+	measure 'Contacted Status Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] IN {
+			        "FirstCall",
+			        "SecondCall",
+			        "ThirdCall"
+			    }
+			)
+		formatString: 0
+		lineageTag: 5d500843-938b-4e53-905a-3ab829589043
+
+	measure 'Overdue Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: fa29f282-86e9-4807-be37-62f28089b993
+
+	measure 'Pending Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE()
+			)
+		formatString: 0
+		lineageTag: 75d14fb8-560c-4f41-b08f-fcda9ae7ac20
+
+	column Dummy
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dd2ebb6-3f24-4c3c-a7d3-a8cafbf21b9a
+		summarizeBy: sum
+		sourceColumn: Dummy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
 		mode: import
-		source = Calendar(Date(2015,1,1), Date(2015,1,1))
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Dummy = _t]),
+				  #"Changed column type" = Table.TransformColumnTypes(Source, {{"Dummy", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
 
-	annotation __PBI_TemplateDateTable = true
+	annotation PBI_NavigationStepName = Navigation
 
-	annotation DefaultItem = DateHierarchy
+	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimCounsellor.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/DimCounsellor.tmdl">
 table DimCounsellor
 	lineageTag: b9ce2e4f-26fe-4a08-8e89-49fde8e3a758
 
@@ -2148,8 +3517,8 @@ table DimCounsellor
 	measure 'Admission Conversion Rate' =
 			
 			DIVIDE(
-			    COUNTROWS(FactAdmission),
-			    DISTINCTCOUNT(FactLead[Id]),
+			    [Leads Reaching Admission],
+			    [Total Leads],
 			    0
 			)
 		formatString: 0.00%;-0.00%;0.00%
@@ -2158,8 +3527,8 @@ table DimCounsellor
 	measure 'Enrollment Conversion Rate' =
 			
 			DIVIDE(
-			    COUNTROWS(FactEnrollment),
-			    DISTINCTCOUNT(FactLead[Id]),
+			    [Leads Reaching Enrollment],
+			    [Total Leads],
 			    0
 			)
 		formatString: 0.00%;-0.00%;0.00%
@@ -2233,7 +3602,7 @@ table DimCounsellor
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimDate.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/DimDate.tmdl">
 table DimDate
 	lineageTag: da22f77f-363b-4c4f-bf5a-e66f34e6ac6b
 
@@ -2243,11 +3612,6 @@ table DimDate
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Date]
-
-		variation Variation
-			isDefault
-			relationship: b6dacd16-5a3b-49c8-8ca9-fdf3e21bad94
-			defaultHierarchy: LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2319,7 +3683,7 @@ table DimDate
 	annotation PBI_Id = 487511938e1b44c9b6e86d0e50989a0e
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimLeadSource.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/DimLeadSource.tmdl">
 table DimLeadSource
 	lineageTag: 563ca5c9-15c1-4377-8461-6b5f4fb36221
 
@@ -2346,7 +3710,7 @@ table DimLeadSource
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimProgram.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/DimProgram.tmdl">
 table DimProgram
 	lineageTag: fb69a30d-78ae-45d3-b0f9-17f53d995c64
 
@@ -2405,7 +3769,7 @@ table DimProgram
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactAdmission.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactAdmission.tmdl">
 table FactAdmission
 	lineageTag: 177051c9-d33e-43f1-ab0c-5c15ccf4ad89
 
@@ -2448,11 +3812,6 @@ table FactAdmission
 		summarizeBy: none
 		sourceColumn: CreatedAtUtc
 
-		variation Variation
-			isDefault
-			relationship: e0f8131f-80da-424c-aa61-0577684984a9
-			defaultHierarchy: LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column SubmittedAt
@@ -2462,11 +3821,6 @@ table FactAdmission
 		summarizeBy: none
 		sourceColumn: SubmittedAt
 
-		variation Variation
-			isDefault
-			relationship: 999b84e0-3e8c-45de-9a6b-93b1a33389b3
-			defaultHierarchy: LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column ApprovedAt
@@ -2475,11 +3829,6 @@ table FactAdmission
 		lineageTag: 2f3b1649-12f5-4452-b075-c5c7b431c9e2
 		summarizeBy: none
 		sourceColumn: ApprovedAt
-
-		variation Variation
-			isDefault
-			relationship: 6cb80dc6-2827-49d2-a2e5-f6d1a69086e7
-			defaultHierarchy: LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2497,11 +3846,6 @@ table FactAdmission
 		lineageTag: bfed365e-a6a1-4a84-b381-4764f4684d36
 		summarizeBy: none
 		sourceColumn: AdmissionDate
-
-		variation Variation
-			isDefault
-			relationship: 31b92493-d04f-412f-b5a8-74c6011eeb2a
-			defaultHierarchy: LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2522,7 +3866,7 @@ table FactAdmission
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactEnrollment.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactEnrollment.tmdl">
 table FactEnrollment
 	lineageTag: 823d1d85-d393-4798-9d91-68e62ae6b513
 
@@ -2565,11 +3909,6 @@ table FactEnrollment
 		summarizeBy: none
 		sourceColumn: EnrolledAtUtc
 
-		variation Variation
-			isDefault
-			relationship: 56e41fdc-35d1-4dd6-9da2-01d4fd276604
-			defaultHierarchy: LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column EnrollmentDate
@@ -2578,11 +3917,6 @@ table FactEnrollment
 		lineageTag: a3ea6f75-30a2-4ee7-877c-f7819ffd400c
 		summarizeBy: none
 		sourceColumn: EnrollmentDate
-
-		variation Variation
-			isDefault
-			relationship: e8e4241e-345b-4998-9777-e776b0ed4f1f
-			defaultHierarchy: LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2603,7 +3937,7 @@ table FactEnrollment
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactFollowUp.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactFollowUp.tmdl">
 table FactFollowUp
 	lineageTag: dbb2460d-a2e5-4108-9687-70d6fd03f9ef
 
@@ -2629,11 +3963,6 @@ table FactFollowUp
 		lineageTag: 9dd1b21b-e37f-4204-938c-19c389d49d86
 		summarizeBy: none
 		sourceColumn: FollowUpDateUtc
-
-		variation Variation
-			isDefault
-			relationship: 175b8ce6-068e-41dc-9a5e-78a263125dd6
-			defaultHierarchy: LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2667,7 +3996,7 @@ table FactFollowUp
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLead.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactLead.tmdl">
 table FactLead
 	lineageTag: b545b4a9-bce3-4e25-be68-fba422c269ac
 
@@ -2709,11 +4038,6 @@ table FactLead
 		lineageTag: 296d68f8-42e5-4acb-84a3-3edc6dca33ed
 		summarizeBy: none
 		sourceColumn: CreatedAtUtc
-
-		variation Variation
-			isDefault
-			relationship: 9dbd17a1-993b-4efd-be2a-ccba059c327f
-			defaultHierarchy: LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -2768,6 +4092,33 @@ table FactLead
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column 'Lead Age Days' =
+			
+			DATEDIFF(
+			    FactLead[CreatedDate],
+			    TODAY(),
+			    DAY
+			)
+		formatString: 0
+		lineageTag: 51363ec6-6697-4898-9113-d2832b70831d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Age Bucket' =
+			
+			SWITCH(
+			    TRUE(),
+			    FactLead[Lead Age Days] <= 7, "0-7 Days",
+			    FactLead[Lead Age Days] <= 30, "8-30 Days",
+			    FactLead[Lead Age Days] <= 60, "31-60 Days",
+			    "61+ Days"
+			)
+		lineageTag: 55a708a7-63cf-45f6-8574-1a35ce8d81a6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition FactLead = m
 		mode: import
 		source =
@@ -2783,7 +4134,7 @@ table FactLead
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLeadActivity.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactLeadActivity.tmdl">
 table FactLeadActivity
 	lineageTag: 60c139a1-64be-4866-8aac-c21e1aa6016e
 
@@ -2818,11 +4169,6 @@ table FactLeadActivity
 		summarizeBy: none
 		sourceColumn: CreatedAtUtc
 
-		variation Variation
-			isDefault
-			relationship: 80593919-df98-4873-9ca4-335e12700112
-			defaultHierarchy: LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column IsCompleted
@@ -2856,7 +4202,7 @@ table FactLeadActivity
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactStatusHistory.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/tables/FactStatusHistory.tmdl">
 table FactStatusHistory
 	lineageTag: 9bf2db0c-e5ae-4c5a-bdb0-8171947898bd
 
@@ -2899,11 +4245,6 @@ table FactStatusHistory
 		summarizeBy: none
 		sourceColumn: ChangedAtUtc
 
-		variation Variation
-			isDefault
-			relationship: 481346bd-77cc-4bcb-8300-55b8d9f4d2a3
-			defaultHierarchy: LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column ChangedByUserName
@@ -2936,1310 +4277,12 @@ table FactStatusHistory
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.tmdl">
-table LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 5e8a5fd3-7346-4610-8e19-fc570358f2ac
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 1d76ae1e-34a4-44ef-8ee4-ddcdfd5710b9
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: e9162aeb-38ef-47d1-87c5-fda30e6ce466
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 8517a559-1b52-46f4-85be-1d1289f87890
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 160de38c-9cc0-4f3c-a814-a4beb5588716
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 67f9f07b-65e8-4c0f-b5c7-6e2549e8b651
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 7d317bcc-4081-4f52-baf3-23d1d58b8bc5
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 44a6437f-66a6-42cf-a8b0-5b78c92048d7
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: a562bd9d-f9d8-4308-9d86-ed4a0d555bc6
-
-		level Year
-			lineageTag: fed6ecb8-36f0-43d5-9e8d-4275f8363623
-			column: Year
-
-		level Quarter
-			lineageTag: fb52448a-0975-4846-bd72-f4f6a69059d9
-			column: Quarter
-
-		level Month
-			lineageTag: 4cc999b7-eae2-40d9-ab1f-eec73532df1f
-			column: Month
-
-		level Day
-			lineageTag: 2f050413-2f99-47e9-80e6-ffac4414878f
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactLead'[CreatedAtUtc])), 1, 1), Date(Year(MAX('FactLead'[CreatedAtUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.tmdl">
-table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 0b4d9c1b-2bcb-44b3-83d1-b38ab7fa5b87
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: f4cacc49-65a7-49c2-bb85-2c5f9756949e
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 8d439eaa-3502-4973-b5ab-3e269f201d0a
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 27056f72-1245-4fd0-a004-9c28b27479db
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 0d39958f-a0e9-44af-9253-c9de7090f9f6
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 6897532d-71d4-45f8-bd68-c0855d725725
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 705575d8-8628-4266-b5b4-d67acf791ee0
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: e8052da9-d552-41b0-806b-d14fe8cdb925
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 5809bc2d-8b4c-44ed-8539-70b0bad155b9
-
-		level Year
-			lineageTag: 00b92634-7b7f-4e81-8e73-68bf829c2698
-			column: Year
-
-		level Quarter
-			lineageTag: 141d6bfd-3940-463e-a9a6-76802de83d91
-			column: Quarter
-
-		level Month
-			lineageTag: b7a14d03-336b-4e80-a4a6-7052fdfd71d5
-			column: Month
-
-		level Day
-			lineageTag: 97326499-b3da-4bdf-b9f9-4259eef70e4c
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactEnrollment'[EnrollmentDate])), 1, 1), Date(Year(MAX('FactEnrollment'[EnrollmentDate])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.tmdl">
-table LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 8e3f9246-2ecc-45c4-97dd-a9fac9831a8c
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: ac859bcd-ce05-4c54-b5b6-1ae5434f7fbd
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: ab8f3384-665f-4ee1-8dae-433210c48a98
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 74cd787c-8022-4f21-a3ac-2dc8237b0ccc
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 6dc4a22d-105b-4eaf-8399-dd6042fc7210
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 87f7d7aa-6fa5-4136-8b02-75da9b7d9756
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 7e5753be-4507-4da4-b3b0-25e9e04b1a79
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 808376c7-69fd-4002-b731-964374b1b972
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 591e4fc3-dd4b-445a-8cf5-3d708ba69a54
-
-		level Year
-			lineageTag: e6c5ea40-b532-40fd-aadd-ce1c081c9bfe
-			column: Year
-
-		level Quarter
-			lineageTag: 73d9d641-de29-4ae4-bd62-9adb49af203b
-			column: Quarter
-
-		level Month
-			lineageTag: 88722883-b18d-4f8d-a59f-7fb1c6eb5896
-			column: Month
-
-		level Day
-			lineageTag: 4fbee171-ee6a-455c-a9b6-c4d2c9360465
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactAdmission'[SubmittedAt])), 1, 1), Date(Year(MAX('FactAdmission'[SubmittedAt])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.tmdl">
-table LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 60d31d2e-2f0f-4ff0-a278-98b4503d5e75
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 5e7052ae-ac2c-4e51-b707-fda79ce2fd1f
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: f6c03121-4408-4dbe-a1d7-58d1d18a4187
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: ce5070ab-2096-4249-aa7a-b29a4029f031
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: f79e5fab-ffcc-4bfc-ac0c-bb496e532fe9
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 732cbc0a-44f6-4524-8008-ec0035fc24c4
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: adfc5b98-ad16-4691-950a-10fcb4f472e8
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: b57df95d-c07c-425d-b242-1b83cde01d8d
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 83371fc4-eaa2-4af0-a0d2-708845ec16b8
-
-		level Year
-			lineageTag: 66a4f61b-1974-4036-aada-16e367f0bf44
-			column: Year
-
-		level Quarter
-			lineageTag: 74886c92-466f-48bb-a03e-81806311d282
-			column: Quarter
-
-		level Month
-			lineageTag: 1bb8c27c-ecae-4e47-8e24-2aadf1d4ef4e
-			column: Month
-
-		level Day
-			lineageTag: ef7bdb3a-d1d3-4021-8584-5e0acec29edf
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactAdmission'[ApprovedAt])), 1, 1), Date(Year(MAX('FactAdmission'[ApprovedAt])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.tmdl">
-table LocalDateTable_58db9876-e770-416d-af41-5b2adf760113
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 65e97573-ed6f-4c59-bde6-4cc1b114e2c7
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 0ffdd938-8cb4-410f-8122-b1397abb734a
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 6ccbb2d5-0695-467a-aad6-e0e87baacbdc
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 8d9f7add-5562-44d2-9212-66bbc83ec939
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 491f97a8-a1ac-4c7c-bf2b-12738e2945fb
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: b8d785eb-39b9-47ed-84ef-b49f40509930
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: a82a8389-c2b7-42c0-b3fb-5ec3d01aa4b1
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: d0805fed-d1e1-47f9-98f4-395b72bebfe6
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: afa13d10-75d3-4565-a0d8-7292278a861b
-
-		level Year
-			lineageTag: e757cf0b-ada2-46de-b9d2-a3384862bf76
-			column: Year
-
-		level Quarter
-			lineageTag: 8a0990fd-4ded-413a-9fb0-4250f9140ea1
-			column: Quarter
-
-		level Month
-			lineageTag: 1abe8e9d-834f-4180-9538-de9d99d97b27
-			column: Month
-
-		level Day
-			lineageTag: fd392aa3-5801-4fe2-bb1d-17358c64a5f1
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_58db9876-e770-416d-af41-5b2adf760113 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactLeadActivity'[CreatedAtUtc])), 1, 1), Date(Year(MAX('FactLeadActivity'[CreatedAtUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.tmdl">
-table LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 0d3ed68b-d887-4c80-9365-31134658e6cb
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 637ac0b5-0ece-4f68-b1eb-b56b3b748c3a
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: e2b109e7-8ab2-4055-8ecf-c5e6d3c32081
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: e5be4f91-eaf2-42c8-b670-a60cb7b2c653
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: cd780895-b921-44fb-b2f9-38627f8a7f05
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: ef8c0167-68a6-4062-b399-db7fb1eed812
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 010be826-0ad3-4ea0-aee8-e7ef2834b3b3
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 14f11f36-3e03-47c6-b229-2c2dfbc03ba7
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: d4b122a8-f459-4775-a04e-c6958c4b81ee
-
-		level Year
-			lineageTag: e44b615d-7cf9-4e09-9c07-7d624405c798
-			column: Year
-
-		level Quarter
-			lineageTag: 74a87cfe-3c92-4ec4-96da-8a42764df277
-			column: Quarter
-
-		level Month
-			lineageTag: 10baed5e-80c3-48d8-b4ab-5a13bd9f40f2
-			column: Month
-
-		level Day
-			lineageTag: d9201cf1-2d30-45b2-8b65-2b2c8706e137
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactFollowUp'[FollowUpDateUtc])), 1, 1), Date(Year(MAX('FactFollowUp'[FollowUpDateUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.tmdl">
-table LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 38944bd9-d1e7-458e-a319-be7af47c78c5
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: ab02a8a7-0fd8-4eeb-ad87-f95d860dd873
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 915b82dc-36e8-4cbd-9e80-0ef6c454533d
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 75e41e6b-0cc3-46ba-8b7e-022419239c85
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: c1e0dc0b-3ded-40de-b0c0-b11467f2f113
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: a873b78f-e5be-4312-b5f2-10a7ebbb8d59
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: d3568897-9b2a-437f-9b8d-35da05cd5807
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 14f82170-650a-40d8-b8e9-faa8031d41d5
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 61084436-5f94-4929-aeb8-e9f59a5c845b
-
-		level Year
-			lineageTag: edad25a3-255b-4f6a-b4cd-0fc99d8f0596
-			column: Year
-
-		level Quarter
-			lineageTag: 7565748b-de22-4e2f-8e3f-ba878cf6e73b
-			column: Quarter
-
-		level Month
-			lineageTag: 539c2966-bd5a-4104-ac34-40dad588f34c
-			column: Month
-
-		level Day
-			lineageTag: 7148e7ba-c9af-47b7-8c33-e901e684013a
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactStatusHistory'[ChangedAtUtc])), 1, 1), Date(Year(MAX('FactStatusHistory'[ChangedAtUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.tmdl">
-table LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 150ceb86-835a-48be-81e7-dc2438df25bc
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: ba4bc87f-6d53-477b-b90e-f7d98bd1c296
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 251dd52e-b912-4277-92b6-c81c9e68ba91
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 0471d0ef-e84d-46ca-8e5e-d0fd497a5285
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 01f23acb-8f73-4d11-af84-cd4af2379356
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: d2ae9f13-7389-4c19-ace4-3331d8c33154
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: cb72ea7c-cbfd-4f23-8448-344a6a7ca1f8
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: a31e30b0-684b-4a06-9b12-88aaaf6139d0
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: f4b0603d-fd39-4751-9911-3f120d2ffa1f
-
-		level Year
-			lineageTag: 0a2ab404-2e30-47f6-a36d-6732bbd9f916
-			column: Year
-
-		level Quarter
-			lineageTag: ba7c300a-880a-4d30-96e2-b82afb1bf75e
-			column: Quarter
-
-		level Month
-			lineageTag: dc607a69-f120-4064-aca2-c8eead31a135
-			column: Month
-
-		level Day
-			lineageTag: ace90a18-4136-46f9-b64c-34c99c871734
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactAdmission'[CreatedAtUtc])), 1, 1), Date(Year(MAX('FactAdmission'[CreatedAtUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.tmdl">
-table LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2
-	isHidden
-	showAsVariationsOnly
-	lineageTag: c7eda88f-4ce1-467b-acc3-7921946d4955
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 525be4ed-3c6a-47b6-8433-99d873e69cf2
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: eb6e233a-34d7-44af-a5d6-70d1c5fd1391
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: f24624bc-d269-4ae4-8157-4cfb56566d34
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: b597c090-499a-4bd7-bd1a-b772bc6ef625
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: f6eda919-614e-4d82-b522-1be9d0c22b86
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 71cadaf7-cf05-4a36-ba84-63b65c4c600b
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: d6411443-6b17-4965-b39d-e87207dd4e06
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: bc0883ce-83ae-4c70-be94-450a42fd0cac
-
-		level Year
-			lineageTag: 94d411c3-e03a-4ef6-b5d7-6fe7cf8a3adf
-			column: Year
-
-		level Quarter
-			lineageTag: 1ec1d919-3640-434f-9214-09bdabe4a93f
-			column: Quarter
-
-		level Month
-			lineageTag: bf27209c-9c6f-4d1d-aeac-35f001567acb
-			column: Month
-
-		level Day
-			lineageTag: 2b3b2ca0-01aa-4598-885c-75096e7b8904
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactAdmission'[AdmissionDate])), 1, 1), Date(Year(MAX('FactAdmission'[AdmissionDate])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.tmdl">
-table LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd
-	isHidden
-	showAsVariationsOnly
-	lineageTag: db645802-e446-41e9-b820-93b400d17bf3
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: 8a05aded-e2b2-4fec-890c-2a42bde86232
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 27516537-9779-48d4-835b-54068a4c7355
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 0ac04ee9-6ba0-4c4d-9106-72e2256f2446
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 8785bdec-9f47-484c-8535-475cbd88d18e
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: cd730c3e-b550-4899-be94-e92f23904b46
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: fc28b11f-528e-4960-a1f7-77ccbd1a6a96
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: f914fa96-2a38-43a8-8625-647103105777
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 714fc936-e11b-4171-ac4c-65eb4f4e1d09
-
-		level Year
-			lineageTag: f2343f76-e8c5-4ec7-b00d-c7b3fae1fc99
-			column: Year
-
-		level Quarter
-			lineageTag: b1b6b98c-51e2-47bd-b20a-dbb7478c7ae2
-			column: Quarter
-
-		level Month
-			lineageTag: 590a283b-398a-4762-8eb1-1662e2c3855b
-			column: Month
-
-		level Day
-			lineageTag: e7bd6e48-828e-4036-a0cb-b4445581f973
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('DimDate'[Date])), 1, 1), Date(Year(MAX('DimDate'[Date])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.tmdl">
-table LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533
-	isHidden
-	showAsVariationsOnly
-	lineageTag: 0ed86083-1250-47a0-a1f1-60a0f5a5bf68
-
-	column Date
-		dataType: dateTime
-		isHidden
-		formatString: General Date
-		lineageTag: e69bab6d-96bf-4077-a0b4-aad61dc75193
-		dataCategory: PaddedDateTableDates
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Date]
-
-		annotation SummarizationSetBy = User
-
-	column Year = YEAR([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 1501c659-62f0-4e4e-ab84-956687fef2fb
-		dataCategory: Years
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Year
-
-	column MonthNo = MONTH([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: f003c4bf-0552-4a78-9ee7-14841f6cec45
-		dataCategory: MonthOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = MonthNumber
-
-	column Month = FORMAT([Date], "MMMM")
-		dataType: string
-		isHidden
-		lineageTag: 0ad61298-b835-46e7-ae24-af385101463a
-		dataCategory: Months
-		summarizeBy: none
-		sortByColumn: MonthNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Month
-
-	column QuarterNo = INT(([MonthNo] + 2) / 3)
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 7b1b4261-cb48-475c-a416-a7c8c663c482
-		dataCategory: QuarterOfYear
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = QuarterNumber
-
-	column Quarter = "Qtr " & [QuarterNo]
-		dataType: string
-		isHidden
-		lineageTag: 1b021182-fb51-4f44-aa05-f6479b9659d4
-		dataCategory: Quarters
-		summarizeBy: none
-		sortByColumn: QuarterNo
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Quarter
-
-	column Day = DAY([Date])
-		dataType: int64
-		isHidden
-		formatString: 0
-		lineageTag: 8637c63f-599e-4a73-b602-67a217c1c839
-		dataCategory: DayOfMonth
-		summarizeBy: none
-
-		annotation SummarizationSetBy = User
-
-		annotation TemplateId = Day
-
-	hierarchy 'Date Hierarchy'
-		lineageTag: 60b60865-adc0-4261-bf6f-c5037c342678
-
-		level Year
-			lineageTag: 3387f374-03f3-4a3c-8789-7efdefc43a76
-			column: Year
-
-		level Quarter
-			lineageTag: 5d4e8a82-858a-418b-a543-8db3369390bf
-			column: Quarter
-
-		level Month
-			lineageTag: 02e48527-117e-4cef-8859-295b7fe3e8b7
-			column: Month
-
-		level Day
-			lineageTag: b4854038-b1a0-4912-890b-27afcf105a06
-			column: Day
-
-		annotation TemplateId = DateHierarchy
-
-	partition LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533 = calculated
-		mode: import
-		source = Calendar(Date(Year(MIN('FactEnrollment'[EnrolledAtUtc])), 1, 1), Date(Year(MAX('FactEnrollment'[EnrolledAtUtc])), 12, 31))
-
-	annotation __PBI_LocalDateTable = true
-</file>
-
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/database.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/database.tmdl">
 database
 	compatibilityLevel: 1600
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/expressions.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/expressions.tmdl">
 expression Leads =
 		let
 		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Leads.csv"), [Delimiter = ",", Columns = 10, QuoteStyle = QuoteStyle.None]),
@@ -4353,7 +4396,7 @@ expression Users =
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/model.tmdl">
+<file path="Phase2_Working.SemanticModel/definition/model.tmdl">
 model Model
 	culture: en-US
 	defaultPowerBIDataSourceVersion: powerBI_V3
@@ -4362,84 +4405,28 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation __PBI_TimeIntelligenceEnabled = 1
+annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["Leads","AdmissionApplications","LeadActivities","LeadFollowUps","LeadStatusHistory","Programs","StudentEnrollments","Users","DimLeadSource","FactLead","FactLeadActivity","FactFollowUp","FactAdmission","FactEnrollment","FactStatusHistory","DimCounsellor","DimProgram"]
+annotation PBI_QueryOrder = ["Leads","AdmissionApplications","LeadActivities","LeadFollowUps","LeadStatusHistory","Programs","StudentEnrollments","Users","DimLeadSource","FactLead","FactLeadActivity","FactFollowUp","FactAdmission","FactEnrollment","FactStatusHistory","DimCounsellor","DimProgram","_Measures"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579
 ref table DimLeadSource
 ref table DimDate
-ref table LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd
 ref table FactLead
-ref table LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40
 ref table FactLeadActivity
-ref table LocalDateTable_58db9876-e770-416d-af41-5b2adf760113
 ref table FactFollowUp
-ref table LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b
 ref table FactAdmission
-ref table LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9
-ref table LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97
-ref table LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823
 ref table FactEnrollment
-ref table LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533
 ref table FactStatusHistory
-ref table LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145
 ref table DimCounsellor
 ref table DimProgram
-ref table LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2
-ref table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
+ref table _Measures
 
 ref cultureInfo en-US
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/relationships.tmdl">
-relationship b6dacd16-5a3b-49c8-8ca9-fdf3e21bad94
-	joinOnDateBehavior: datePartOnly
-	fromColumn: DimDate.Date
-	toColumn: LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.Date
-
-relationship 9dbd17a1-993b-4efd-be2a-ccba059c327f
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactLead.CreatedAtUtc
-	toColumn: LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.Date
-
-relationship 80593919-df98-4873-9ca4-335e12700112
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactLeadActivity.CreatedAtUtc
-	toColumn: LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.Date
-
-relationship 175b8ce6-068e-41dc-9a5e-78a263125dd6
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactFollowUp.FollowUpDateUtc
-	toColumn: LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.Date
-
-relationship e0f8131f-80da-424c-aa61-0577684984a9
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactAdmission.CreatedAtUtc
-	toColumn: LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.Date
-
-relationship 999b84e0-3e8c-45de-9a6b-93b1a33389b3
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactAdmission.SubmittedAt
-	toColumn: LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.Date
-
-relationship 6cb80dc6-2827-49d2-a2e5-f6d1a69086e7
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactAdmission.ApprovedAt
-	toColumn: LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.Date
-
-relationship 56e41fdc-35d1-4dd6-9da2-01d4fd276604
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactEnrollment.EnrolledAtUtc
-	toColumn: LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.Date
-
-relationship 481346bd-77cc-4bcb-8300-55b8d9f4d2a3
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactStatusHistory.ChangedAtUtc
-	toColumn: LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.Date
-
+<file path="Phase2_Working.SemanticModel/definition/relationships.tmdl">
 relationship AutoDetected_7c21dbce-b1eb-444c-b8f9-d4ce82fd4ff4
 	fromColumn: FactLead.LeadSource
 	toColumn: DimLeadSource.LeadSource
@@ -4496,50 +4483,40 @@ relationship 68496c1d-a9c5-aade-6402-7c180b62efe6
 	fromColumn: FactLead.CreatedDate
 	toColumn: DimDate.Date
 
-relationship 31b92493-d04f-412f-b5a8-74c6011eeb2a
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactAdmission.AdmissionDate
-	toColumn: LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.Date
-
-relationship e8e4241e-345b-4998-9777-e776b0ed4f1f
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FactEnrollment.EnrollmentDate
-	toColumn: LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.Date
-
 relationship 28112676-281e-18f7-5788-7e092f69ba54
 	fromColumn: FactAdmission.AdmissionApplicationId
 	toColumn: FactEnrollment.AdmissionApplicationId
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/.platform">
+<file path="Phase2_Working.SemanticModel/.platform">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "SemanticModel",
-    "displayName": "RealRails_Lead_Intelligence_Phase2"
+    "displayName": "Phase2_Working"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "61447f05-b7fc-4e56-a892-f033303e44b6"
+    "logicalId": "f4b572dd-8e8c-4068-b3cc-44cd3b0ae2db"
   }
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition.pbism">
+<file path="Phase2_Working.SemanticModel/definition.pbism">
 {
   "version": "4.2",
   "settings": {}
 }
 </file>
 
-<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/diagramLayout.json">
+<file path="Phase2_Working.SemanticModel/diagramLayout.json">
 {
   "version": "1.1.0",
   "diagrams": [
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 2955.4286411830358,
+        "x": 2352.0000348772323,
         "y": 0
       },
       "nodes": [
@@ -4671,6 +4648,19 @@ relationship 28112676-281e-18f7-5788-7e092f69ba54
             "width": 234
           },
           "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2351.5959337103641,
+            "y": 332.19444787720812
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "eaaad2b2-3a3b-42db-9d6f-d45fe9c0a9d5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
@@ -4683,6 +4673,22 @@ relationship 28112676-281e-18f7-5788-7e092f69ba54
   ],
   "selectedDiagram": "All tables",
   "defaultDiagram": "All tables"
+}
+</file>
+
+<file path="Phase2_Working.pbip">
+{
+  "version": "1.0",
+  "artifacts": [
+    {
+      "report": {
+        "path": "Phase2_Working.Report"
+      }
+    }
+  ],
+  "settings": {
+    "enableAutoRecovery": true
+  }
 }
 </file>
 
