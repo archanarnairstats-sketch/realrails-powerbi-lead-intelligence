@@ -1,0 +1,57 @@
+table DimProgram
+	lineageTag: fb69a30d-78ae-45d3-b0f9-17f53d995c64
+
+	column ProgramId
+		dataType: string
+		lineageTag: e3151c8e-fdf2-4992-a13b-e312c5d11618
+		summarizeBy: none
+		sourceColumn: ProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramCode
+		dataType: string
+		lineageTag: 348725c9-7cbb-456f-b6a0-7cc79713a267
+		summarizeBy: none
+		sourceColumn: ProgramCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramName
+		dataType: string
+		lineageTag: e79a72d5-7e18-47e5-bfdb-57a216f536e0
+		summarizeBy: none
+		sourceColumn: ProgramName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duration
+		dataType: int64
+		formatString: 0
+		lineageTag: 38d6e14c-5df2-4e5b-8607-b3e5db5a5876
+		summarizeBy: none
+		sourceColumn: Duration
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 220b66e3-73a3-4874-a6fb-ab8a1f99f00a
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProgram = m
+		mode: import
+		source =
+				let
+				    Source = Programs
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

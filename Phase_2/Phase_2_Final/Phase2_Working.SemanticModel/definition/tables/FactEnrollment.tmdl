@@ -1,0 +1,69 @@
+table FactEnrollment
+	lineageTag: 823d1d85-d393-4798-9d91-68e62ae6b513
+
+	column EnrollmentId
+		dataType: string
+		lineageTag: 18b20608-a881-4c39-9d42-322e95b878c6
+		summarizeBy: none
+		sourceColumn: EnrollmentId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdmissionApplicationId
+		dataType: string
+		lineageTag: 4085a1a1-9825-4c40-802d-1443f1bd71eb
+		summarizeBy: none
+		sourceColumn: AdmissionApplicationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramId
+		dataType: string
+		lineageTag: 843529ae-8aa8-4c73-8641-b76800468e9b
+		summarizeBy: none
+		sourceColumn: ProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column StudentProfileId
+		dataType: string
+		lineageTag: f66df489-b342-4b30-afb3-ce373e0f35d4
+		summarizeBy: none
+		sourceColumn: StudentProfileId
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrolledAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bfb315e3-e290-4f3f-a3da-3827af0e7f83
+		summarizeBy: none
+		sourceColumn: EnrolledAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrollmentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a3ea6f75-30a2-4ee7-877c-f7819ffd400c
+		summarizeBy: none
+		sourceColumn: EnrollmentDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactEnrollment = m
+		mode: import
+		source =
+				let
+				    Source = StudentEnrollments,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([EnrolledAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "EnrollmentDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

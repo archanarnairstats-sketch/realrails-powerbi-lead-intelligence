@@ -1,0 +1,4695 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+Phase2_Working.Report/
+  definition/
+    pages/
+      21f7c21bab4791213d2e/
+        visuals/
+          06d259e7b450ee5cd690/
+            visual.json
+          72b4f2f5ef5290462b76/
+            visual.json
+          8f366c919f43149f82e3/
+            visual.json
+          a460a9d8e1a6a672b15f/
+            visual.json
+          a830ca765afeb38ca9de/
+            visual.json
+          aa9253636db7bd432581/
+            visual.json
+          c083360443b7f86bbcc7/
+            visual.json
+          e4c72110ca0b1eacd1de/
+            visual.json
+          f4f14219e66f4dad3f0a/
+            visual.json
+          f743d410d43f6ecb0592/
+            visual.json
+        page.json
+      344deb90a8026c89876d/
+        visuals/
+          0d94483cd8282e294e61/
+            visual.json
+          2456d11b12ace8264336/
+            visual.json
+          24e416202a40c65f6d65/
+            visual.json
+          2d5b9c130b77a36e372f/
+            visual.json
+          30f5f694b82d082097ed/
+            visual.json
+          31a77082367134e164b5/
+            visual.json
+          32ccfdd637d69a7fe692/
+            visual.json
+          39d18ca4b81f62b6afae/
+            visual.json
+          4f2c6b3fe76274f3fe38/
+            visual.json
+          6891b5380f4740a10f9c/
+            visual.json
+          88b2b68629c1f780c6a9/
+            visual.json
+          9e10456150375765f236/
+            visual.json
+          c039063e1e7679c7bd95/
+            visual.json
+          c895891d3c76c4a38747/
+            visual.json
+          c90dae361cf3a0a267f9/
+            visual.json
+          cd3fa4f96a4471bac716/
+            visual.json
+          de46acde02855249635c/
+            visual.json
+          e98bf9b88da5526dca66/
+            visual.json
+          f5cca8cfab60b1a14811/
+            visual.json
+          f818c2d05d57102d68de/
+            visual.json
+        page.json
+      pages.json
+    report.json
+    version.json
+  StaticResources/
+    SharedResources/
+      BaseThemes/
+        CY26SU05.json
+      BuiltInThemes/
+        AccessibleDefault.json
+  .platform
+  definition.pbir
+Phase2_Working.SemanticModel/
+  .pbi/
+    editorSettings.json
+  definition/
+    cultures/
+      en-US.tmdl
+    tables/
+      _Measures.tmdl
+      DimCounsellor.tmdl
+      DimDate.tmdl
+      DimLeadSource.tmdl
+      DimProgram.tmdl
+      FactAdmission.tmdl
+      FactEnrollment.tmdl
+      FactFollowUp.tmdl
+      FactLead.tmdl
+      FactLeadActivity.tmdl
+      FactStatusHistory.tmdl
+    database.tmdl
+    expressions.tmdl
+    model.tmdl
+    relationships.tmdl
+  .platform
+  definition.pbism
+  diagramLayout.json
+Phase2_Working.pbip
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/06d259e7b450ee5cd690/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "06d259e7b450ee5cd690",
+  "position": {
+    "x": 651.42857142857144,
+    "y": 0,
+    "z": 2000,
+    "height": 720,
+    "width": 384.28571428571433,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProgram"
+                    }
+                  },
+                  "Property": "ProgramName"
+                }
+              },
+              "queryRef": "DimProgram.ProgramName",
+              "nativeQueryRef": "ProgramName"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimProgram"
+                  }
+                },
+                "Property": "ProgramName"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/72b4f2f5ef5290462b76/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "72b4f2f5ef5290462b76",
+  "position": {
+    "x": 0,
+    "y": 432.5,
+    "z": 6000,
+    "height": 152.5,
+    "width": 397.5,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Total Leads"
+                }
+              },
+              "queryRef": "DimCounsellor.Total Leads",
+              "nativeQueryRef": "Total Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Total Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/8f366c919f43149f82e3/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "8f366c919f43149f82e3",
+  "position": {
+    "x": 0,
+    "y": 292.85714285714289,
+    "z": 7000,
+    "height": 138.57142857142858,
+    "width": 395.71428571428572,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Admission Conversion Rate"
+                }
+              },
+              "queryRef": "DimCounsellor.Admission Conversion Rate",
+              "nativeQueryRef": "Admission Conversion Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Admission Conversion Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/a460a9d8e1a6a672b15f/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a460a9d8e1a6a672b15f",
+  "position": {
+    "x": 1035.7142857142858,
+    "y": 0,
+    "z": 3000,
+    "height": 720,
+    "width": 244.28571428571431,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "CounsellorName"
+                }
+              },
+              "queryRef": "DimCounsellor.CounsellorName",
+              "nativeQueryRef": "CounsellorName"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "CounsellorName"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/a830ca765afeb38ca9de/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a830ca765afeb38ca9de",
+  "position": {
+    "x": 0,
+    "y": 137.14285714285714,
+    "z": 5000,
+    "height": 155.71428571428572,
+    "width": 395.71428571428572,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Total Enrollments"
+                }
+              },
+              "queryRef": "DimCounsellor.Total Enrollments",
+              "nativeQueryRef": "Total Enrollments"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Total Enrollments"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/aa9253636db7bd432581/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "aa9253636db7bd432581",
+  "position": {
+    "x": 424.28571428571433,
+    "y": 0,
+    "z": 1000,
+    "height": 314.28571428571428,
+    "width": 167.14285714285717,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimDate"
+                    }
+                  },
+                  "Property": "Month"
+                }
+              },
+              "queryRef": "DimDate.Month",
+              "nativeQueryRef": "Month"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/c083360443b7f86bbcc7/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c083360443b7f86bbcc7",
+  "position": {
+    "x": 362.26536457897117,
+    "y": 584.56456557061256,
+    "z": 9000,
+    "height": 135.84951171711421,
+    "width": 277.18789259451586,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Admission → Enrollment Rate"
+                }
+              },
+              "queryRef": "_Measures.Admission → Enrollment Rate",
+              "nativeQueryRef": "Admission → Enrollment Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Admission → Enrollment Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e4c72110ca0b1eacd1de",
+  "position": {
+    "x": 424.01514263220491,
+    "y": 314.23775942645608,
+    "z": 0,
+    "height": 168.78272667883886,
+    "width": 179.76046499941373,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimLeadSource"
+                    }
+                  },
+                  "Property": "LeadSource"
+                }
+              },
+              "queryRef": "DimLeadSource.LeadSource",
+              "nativeQueryRef": "LeadSource"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactLead"
+                      }
+                    },
+                    "Property": "Id"
+                  }
+                },
+                "Function": 2
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/f4f14219e66f4dad3f0a/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f4f14219e66f4dad3f0a",
+  "position": {
+    "x": 1.4285714285714286,
+    "y": 0,
+    "z": 4000,
+    "height": 137.14285714285714,
+    "width": 394.28571428571433,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Total Admissions"
+                }
+              },
+              "queryRef": "DimCounsellor.Total Admissions",
+              "nativeQueryRef": "Total Admissions"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Total Admissions"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/f743d410d43f6ecb0592/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f743d410d43f6ecb0592",
+  "position": {
+    "x": 0,
+    "y": 584.56456557061256,
+    "z": 8000,
+    "height": 135.84951171711421,
+    "width": 362.26536457897117,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Enrollment Conversion Rate"
+                }
+              },
+              "queryRef": "DimCounsellor.Enrollment Conversion Rate",
+              "nativeQueryRef": "Enrollment Conversion Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Enrollment Conversion Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/page.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "21f7c21bab4791213d2e",
+  "displayName": "Page 1",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/0d94483cd8282e294e61/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "0d94483cd8282e294e61",
+  "position": {
+    "x": 1059.3517479354764,
+    "y": 359.52092999882746,
+    "z": 10000,
+    "height": 101.54407946531768,
+    "width": 220.92698370156955,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Admission Done Leads"
+                }
+              },
+              "queryRef": "_Measures.Admission Done Leads",
+              "nativeQueryRef": "Admission Done Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Admission Done Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/2456d11b12ace8264336/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "2456d11b12ace8264336",
+  "position": {
+    "x": 979.7631451113084,
+    "y": 19.211042061006047,
+    "z": 4000,
+    "height": 113.89403507596442,
+    "width": 282.67676175480329,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overdue Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Overdue Follow-Ups",
+              "nativeQueryRef": "Overdue Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Overdue Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/24e416202a40c65f6d65/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "24e416202a40c65f6d65",
+  "position": {
+    "x": 385.5930585101928,
+    "y": 358.14871270875562,
+    "z": 9000,
+    "height": 100.17186217524582,
+    "width": 201.7159416405635,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "31-60 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.31-60 Days Leads",
+              "nativeQueryRef": "31-60 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "31-60 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/2d5b9c130b77a36e372f/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "2d5b9c130b77a36e372f",
+  "position": {
+    "x": 727.27516373808612,
+    "y": 249.74354679307862,
+    "z": 13000,
+    "height": 109.77738320574885,
+    "width": 220.92698370156955,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Interested Leads"
+                }
+              },
+              "queryRef": "_Measures.Interested Leads",
+              "nativeQueryRef": "Interested Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Interested Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/30f5f694b82d082097ed/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "30f5f694b82d082097ed",
+  "position": {
+    "x": 989.36866614181145,
+    "y": 133.10507713697046,
+    "z": 16000,
+    "height": 104.2885140454614,
+    "width": 290.91006549523445,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Unattended Leads"
+                }
+              },
+              "queryRef": "_Measures.Unattended Leads",
+              "nativeQueryRef": "Unattended Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Unattended Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/31a77082367134e164b5/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "31a77082367134e164b5",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 461.06500946414513,
+    "z": 19000,
+    "height": 101.54407946531768,
+    "width": 163.29385751855142,
+    "tabOrder": 19000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCounsellor"
+                    }
+                  },
+                  "Property": "Total Leads"
+                }
+              },
+              "queryRef": "DimCounsellor.Total Leads",
+              "nativeQueryRef": "Total Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimCounsellor"
+                  }
+                },
+                "Property": "Total Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/32ccfdd637d69a7fe692/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "32ccfdd637d69a7fe692",
+  "position": {
+    "x": 0,
+    "y": 4.1166518702155814,
+    "z": 5000,
+    "height": 141.33838087740165,
+    "width": 211.32146267106654,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactLead"
+                    }
+                  },
+                  "Property": "Lead Age Bucket"
+                }
+              },
+              "queryRef": "FactLead.Lead Age Bucket",
+              "nativeQueryRef": "Lead Age Bucket"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactLead"
+                        }
+                      },
+                      "Property": "Id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "FactLead.Id",
+              "nativeQueryRef": "Count of Id"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ageing validation'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/39d18ca4b81f62b6afae/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "39d18ca4b81f62b6afae",
+  "position": {
+    "x": 730.01959831822978,
+    "y": 133.10507713697046,
+    "z": 17000,
+    "height": 104.2885140454614,
+    "width": 249.74354679307862,
+    "tabOrder": 17000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Pending Follow-Up Leads"
+                }
+              },
+              "queryRef": "_Measures.Pending Follow-Up Leads",
+              "nativeQueryRef": "Pending Follow-Up Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Pending Follow-Up Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/4f2c6b3fe76274f3fe38/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "4f2c6b3fe76274f3fe38",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 249.74354679307862,
+    "z": 11000,
+    "height": 109.77738320574885,
+    "width": 260.72128511365349,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Lost Leads"
+                }
+              },
+              "queryRef": "_Measures.Lost Leads",
+              "nativeQueryRef": "Lost Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Lost Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/6891b5380f4740a10f9c/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6891b5380f4740a10f9c",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 358.14871270875562,
+    "z": 7000,
+    "height": 102.91629675538954,
+    "width": 174.27159583912629,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "0-7 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.0-7 Days Leads",
+              "nativeQueryRef": "0-7 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "0-7 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/88b2b68629c1f780c6a9/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "88b2b68629c1f780c6a9",
+  "position": {
+    "x": 437.7373155329235,
+    "y": 27.444345801437212,
+    "z": 1000,
+    "height": 105.66073133553327,
+    "width": 253.8601986632942,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Completed Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Completed Follow-Ups",
+              "nativeQueryRef": "Completed Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Completed Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/9e10456150375765f236/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "9e10456150375765f236",
+  "position": {
+    "x": 695.71416606643334,
+    "y": 19.211042061006047,
+    "z": 2000,
+    "height": 113.89403507596442,
+    "width": 284.04897904487513,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Pending Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Pending Follow-Ups",
+              "nativeQueryRef": "Pending Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Pending Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c039063e1e7679c7bd95/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c039063e1e7679c7bd95",
+  "position": {
+    "x": 472.04274778472006,
+    "y": 249.74354679307862,
+    "z": 12000,
+    "height": 109.77738320574885,
+    "width": 263.46571969379721,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "New Leads"
+                }
+              },
+              "queryRef": "_Measures.New Leads",
+              "nativeQueryRef": "New Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "New Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c895891d3c76c4a38747/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c895891d3c76c4a38747",
+  "position": {
+    "x": 201.7159416405635,
+    "y": 133.10507713697046,
+    "z": 3000,
+    "height": 116.63846965610814,
+    "width": 270.32680614415654,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Follow-Up Completion Rate"
+                }
+              },
+              "queryRef": "_Measures.Follow-Up Completion Rate",
+              "nativeQueryRef": "Follow-Up Completion Rate"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Follow-Up Completion Rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/c90dae361cf3a0a267f9/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c90dae361cf3a0a267f9",
+  "position": {
+    "x": 0,
+    "y": 185.24933415970119,
+    "z": 18000,
+    "height": 535.16474312802563,
+    "width": 201.7159416405635,
+    "tabOrder": 18000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactLead"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "FactLead.Status",
+              "nativeQueryRef": "Status",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "FactLead",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "Status"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Lost'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/cd3fa4f96a4471bac716/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "cd3fa4f96a4471bac716",
+  "position": {
+    "x": 948.20214743965562,
+    "y": 249.74354679307862,
+    "z": 14000,
+    "height": 109.77738320574885,
+    "width": 332.07658419739028,
+    "tabOrder": 14000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Contacted Status Leads"
+                }
+              },
+              "queryRef": "_Measures.Contacted Status Leads",
+              "nativeQueryRef": "Contacted Status Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Contacted Status Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/de46acde02855249635c/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "de46acde02855249635c",
+  "position": {
+    "x": 211.32146267106654,
+    "y": 27.444345801437212,
+    "z": 0,
+    "height": 113.89403507596442,
+    "width": 204.46037622070722,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Follow-Ups"
+                }
+              },
+              "queryRef": "_Measures.Total Follow-Ups",
+              "nativeQueryRef": "Total Follow-Ups"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Total Follow-Ups"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/e98bf9b88da5526dca66/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e98bf9b88da5526dca66",
+  "position": {
+    "x": 472.04274778472006,
+    "y": 133.10507713697046,
+    "z": 15000,
+    "height": 104.2885140454614,
+    "width": 263.46571969379721,
+    "tabOrder": 15000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overdue Follow-Up Leads"
+                }
+              },
+              "queryRef": "_Measures.Overdue Follow-Up Leads",
+              "nativeQueryRef": "Overdue Follow-Up Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Overdue Follow-Up Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/f5cca8cfab60b1a14811/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f5cca8cfab60b1a14811",
+  "position": {
+    "x": 603.77560763161864,
+    "y": 359.52092999882746,
+    "z": 6000,
+    "height": 108.40516591567699,
+    "width": 208.57702809092279,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "61+ Days Leads"
+                }
+              },
+              "queryRef": "_Measures.61+ Days Leads",
+              "nativeQueryRef": "61+ Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "61+ Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/visuals/f818c2d05d57102d68de/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f818c2d05d57102d68de",
+  "position": {
+    "x": 812.35263572254144,
+    "y": 359.52092999882746,
+    "z": 8000,
+    "height": 108.40516591567699,
+    "width": 246.9991122129349,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "8-30 Days Leads"
+                }
+              },
+              "queryRef": "_Measures.8-30 Days Leads",
+              "nativeQueryRef": "8-30 Days Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "8-30 Days Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/344deb90a8026c89876d/page.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "344deb90a8026c89876d",
+  "displayName": "VALIDATION",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/pages.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "21f7c21bab4791213d2e",
+    "344deb90a8026c89876d"
+  ],
+  "activePageName": "344deb90a8026c89876d"
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/report.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "AccessibleDefault",
+      "reportVersionAtImport": {
+        "visual": "2.10.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "AccessibleDefault",
+          "path": "BuiltInThemes/AccessibleDefault.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "CY26SU05",
+          "path": "BaseThemes/CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/version.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json",
+  "version": "2.0.0"
+}
+</file>
+
+<file path="Phase2_Working.Report/StaticResources/SharedResources/BaseThemes/CY26SU05.json">
+{
+  "name": "CY26SU05",
+  "dataColors": [
+    "#118DFF",
+    "#12239E",
+    "#E66C37",
+    "#6B007B",
+    "#E044A7",
+    "#744EC2",
+    "#D9B300",
+    "#D64550",
+    "#197278",
+    "#1AAB40",
+    "#15C6F4",
+    "#4092FF",
+    "#FFA058",
+    "#BE5DC9",
+    "#F472D0",
+    "#B5A1FF",
+    "#C4A200",
+    "#FF8080",
+    "#00DBBC",
+    "#5BD667",
+    "#0091D5",
+    "#4668C5",
+    "#FF6300",
+    "#99008A",
+    "#EC008C",
+    "#533285",
+    "#99700A",
+    "#FF4141",
+    "#1F9A85",
+    "#25891C",
+    "#0057A2",
+    "#002050",
+    "#C94F0F",
+    "#450F54",
+    "#B60064",
+    "#34124F",
+    "#6A5A29",
+    "#1AAB40",
+    "#BA141A",
+    "#0C3D37",
+    "#0B511F"
+  ],
+  "foreground": "#252423",
+  "foregroundNeutralSecondary": "#605E5C",
+  "foregroundNeutralTertiary": "#B3B0AD",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F3F2F1",
+  "backgroundNeutral": "#C8C6C4",
+  "tableAccent": "#118DFF",
+  "good": "#1AAB40",
+  "neutral": "#D9B300",
+  "bad": "#D64554",
+  "maximum": "#118DFF",
+  "center": "#D9B300",
+  "minimum": "#DEEFFF",
+  "null": "#FF7F48",
+  "hyperlink": "#0078d4",
+  "visitedHyperlink": "#0078d4",
+  "textClasses": {
+    "callout": {
+      "fontSize": 24,
+      "fontFace": "DIN",
+      "color": "#252423"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "DIN",
+      "color": "#252423"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#252423"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#252423"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "*": [
+          {
+            "wordWrap": true
+          }
+        ],
+        "line": [
+          {
+            "transparency": 0
+          }
+        ],
+        "outline": [
+          {
+            "transparency": 0
+          }
+        ],
+        "plotArea": [
+          {
+            "transparency": 0
+          }
+        ],
+        "categoryAxis": [
+          {
+            "showAxisTitle": true,
+            "gridlineStyle": "dotted",
+            "concatenateLabels": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "showAxisTitle": true,
+            "gridlineStyle": "dotted"
+          }
+        ],
+        "y2Axis": [
+          {
+            "show": true
+          }
+        ],
+        "title": [
+          {
+            "titleWrap": true
+          }
+        ],
+        "lineStyles": [
+          {
+            "strokeWidth": 3
+          }
+        ],
+        "wordWrap": [
+          {
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "width": 1
+          }
+        ],
+        "outspacePane": [
+          {
+            "backgroundColor": {
+              "solid": {
+                "color": "#ffffff"
+              }
+            },
+            "transparency": 0,
+            "border": true,
+            "borderColor": {
+              "solid": {
+                "color": "#B3B0AD"
+              }
+            }
+          }
+        ],
+        "filterCard": [
+          {
+            "$id": "Applied",
+            "transparency": 0,
+            "foregroundColor": {
+              "solid": {
+                "color": "#252423"
+              }
+            },
+            "border": true
+          },
+          {
+            "$id": "Available",
+            "transparency": 0,
+            "foregroundColor": {
+              "solid": {
+                "color": "#252423"
+              }
+            },
+            "border": true
+          }
+        ]
+      }
+    },
+    "scatterChart": {
+      "*": {
+        "bubbles": [
+          {
+            "bubbleSize": -10,
+            "markerRangeType": "auto"
+          }
+        ],
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "fillPoint": [
+          {
+            "show": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "forecast": [
+          {
+            "matchSeriesInterpolation": true
+          }
+        ],
+        "seriesLabels": [
+          {
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "map": {
+      "*": {
+        "bubbles": [
+          {
+            "bubbleSize": -10,
+            "markerRangeType": "auto"
+          }
+        ]
+      }
+    },
+    "azureMap": {
+      "*": {
+        "bubbleLayer": [
+          {
+            "bubbleRadius": 8,
+            "minBubbleRadius": 8,
+            "maxRadius": 40
+          }
+        ],
+        "barChart": [
+          {
+            "barHeight": 3,
+            "thickness": 3
+          }
+        ]
+      }
+    },
+    "pieChart": {
+      "*": {
+        "legend": [
+          {
+            "show": true,
+            "position": "RightCenter"
+          }
+        ],
+        "labels": [
+          {
+            "labelStyle": "Data value, percent of total"
+          }
+        ]
+      }
+    },
+    "donutChart": {
+      "*": {
+        "legend": [
+          {
+            "show": true,
+            "position": "RightCenter"
+          }
+        ],
+        "labels": [
+          {
+            "labelStyle": "Data value, percent of total"
+          }
+        ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "rowHeaders": [
+          {
+            "showExpandCollapseButtons": true,
+            "legacyStyleDisabled": true
+          }
+        ]
+      }
+    },
+    "multiRowCard": {
+      "*": {
+        "card": [
+          {
+            "outlineWeight": 2,
+            "barShow": true,
+            "barWeight": 2
+          }
+        ]
+      }
+    },
+    "kpi": {
+      "*": {
+        "trendline": [
+          {
+            "transparency": 20
+          }
+        ]
+      }
+    },
+    "cardVisual": {
+      "*": {
+        "layout": [
+          {
+            "maxTiles": 3
+          },
+          {
+            "$id": "default",
+            "cellPadding": 12,
+            "paddingIndividual": false,
+            "paddingUniform": 12,
+            "backgroundShow": true
+          }
+        ],
+        "overflow": [
+          {
+            "type": 0
+          }
+        ],
+        "image": [
+          {
+            "$id": "default",
+            "position": "Left",
+            "imageAreaSize": 20,
+            "padding": 12,
+            "rectangleRoundedCurve": 4,
+            "fit": "Normal",
+            "fixedSize": false
+          }
+        ],
+        "referenceLabel": [
+          {
+            "$id": "default",
+            "backgroundColor": {
+              "solid": {
+                "color": "backgroundLight"
+              }
+            },
+            "paddingUniform": 12,
+            "rectangleRoundedCurveCustomStyle": true,
+            "rectangleRoundedCurveLeftBottom": 4,
+            "rectangleRoundedCurveRightBottom": 4
+          }
+        ],
+        "referenceLabelDetail": [
+          {
+            "$id": "default",
+            "detailBackgroundColor": {
+              "solid": {
+                "color": "foreground"
+              }
+            },
+            "detailFontColor": {
+              "solid": {
+                "color": "background"
+              }
+            }
+          }
+        ],
+        "referenceLabelTitle": [
+          {
+            "$id": "default",
+            "titleFontColor": {
+              "solid": {
+                "color": "foregroundNeutralSecondary"
+              }
+            }
+          }
+        ],
+        "referenceLabelValue": [
+          {
+            "$id": "default",
+            "valueFontFamily": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif",
+            "fontColor": {
+              "solid": {
+                "color": "foreground"
+              }
+            }
+          }
+        ],
+        "value": [
+          {
+            "$id": "default",
+            "fontFamily": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif"
+          }
+        ],
+        "label": [
+          {
+            "$id": "default",
+            "position": "belowValue",
+            "fontColor": {
+              "solid": {
+                "color": "foregroundNeutralSecondary"
+              }
+            }
+          }
+        ],
+        "spacing": [
+          {
+            "$id": "default",
+            "verticalSpacing": 2
+          }
+        ],
+        "outline": [
+          {
+            "$id": "default",
+            "lineColor": {
+              "solid": {
+                "color": "backgroundLight"
+              }
+            }
+          }
+        ],
+        "divider": [
+          {
+            "$id": "default",
+            "dividerColor": {
+              "solid": {
+                "color": "backgroundLight"
+              }
+            }
+          }
+        ],
+        "shapeCustomRectangle": [
+          {
+            "$id": "default",
+            "tileShape": "rectangleRoundedByPixel",
+            "rectangleRoundedCurve": 4
+          }
+        ],
+        "smallMultiplesOuterShape": [
+          {
+            "$id": "default",
+            "rectangleRoundedCurveCustomStyle": false,
+            "rectangleRoundedCurve": 4
+          }
+        ],
+        "smallMultiplesHeader": [
+          {
+            "$id": "default",
+            "paddingIndividual": false,
+            "paddingUniform": 12,
+            "backgroundColor": {
+              "solid": {
+                "color": "backgroundLight"
+              }
+            }
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "style": "Table",
+            "cellPadding": 12,
+            "rowCount": 3,
+            "orientation": 1,
+            "titleOrientation": 1,
+            "headerPosition": "Top"
+          }
+        ],
+        "smallMultiplesGrid": [
+          {
+            "gridlineColor": {
+              "solid": {
+                "color": "foregroundNeutralTertiary"
+              }
+            }
+          }
+        ],
+        "smallMultiplesBorder": [
+          {
+            "$id": "default",
+            "gridlineColor": {
+              "solid": {
+                "color": "foregroundNeutralTertiary"
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "$id": "default",
+            "paddingUniform": 12,
+            "paddingIndividual": false
+          }
+        ]
+      }
+    },
+    "advancedSlicerVisual": {
+      "*": {
+        "layout": [
+          {
+            "maxTiles": 3
+          }
+        ],
+        "shapeCustomRectangle": [
+          {
+            "$id": "default",
+            "tileShape": "rectangleRoundedByPixel",
+            "rectangleRoundedCurve": 4
+          }
+        ],
+        "selectionIcon": [
+          {
+            "$id": "default",
+            "size": 12
+          }
+        ],
+        "value": [
+          {
+            "$id": "default",
+            "fontFamily": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+          }
+        ]
+      }
+    },
+    "listSlicer": {
+      "*": {
+        "layout": [
+          {
+            "showFixedSize": true
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "date": [
+          {
+            "hideDatePickerButton": false
+          }
+        ],
+        "items": [
+          {
+            "padding": 4,
+            "accessibilityContrastProperties": true
+          }
+        ]
+      }
+    },
+    "waterfallChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ]
+      }
+    },
+    "columnChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "clusteredColumnChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "hundredPercentStackedColumnChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "barChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "clusteredBarChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "hundredPercentStackedBarChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ]
+      }
+    },
+    "areaChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "seriesLabels": [
+          {
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "stackedAreaChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "seriesLabels": [
+          {
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "lineClusteredColumnComboChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "seriesLabels": [
+          {
+            "backgroundTransparency": 0.9,
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "lineStackedColumnComboChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "seriesLabels": [
+          {
+            "backgroundTransparency": 0.9,
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "ribbonChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "valueAxis": [
+          {
+            "show": true
+          }
+        ]
+      }
+    },
+    "hundredPercentStackedAreaChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
+        ],
+        "seriesLabels": [
+          {
+            "enableBackground": true,
+            "leaderLines": true,
+            "seriesMatchColor": true
+          }
+        ]
+      }
+    },
+    "group": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "basicShape": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "shape": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "image": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ]
+      }
+    },
+    "actionButton": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "pageNavigator": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "bookmarkNavigator": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "transparency": 100
+          }
+        ]
+      }
+    }
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/StaticResources/SharedResources/BuiltInThemes/AccessibleDefault.json">
+{
+  "name": "CY23SU02",
+  "dataColors": [
+    "#118DFF",
+    "#12239E",
+    "#E66C37",
+    "#6B007B",
+    "#E645AB",
+    "#4A2D75",
+    "#1AAB40",
+    "#10433F"
+  ],
+  "foreground": "#131312",
+  "background": "#FFFFFF",
+  "foregroundNeutralSecondary": "#6C6966",
+  "backgroundLight": "#E5E0DA",
+  "foregroundNeutralTertiary": "#ABA7A2",
+  "backgroundNeutral": "#C6C2BE",
+  "tableAccent": "#118DFF",
+  "maximum": "#4A2D75",
+  "center": "#1AAB40",
+  "minimum": "#E645AB",
+  "bad": "#E66C37",
+  "neutral": "#6B007B",
+  "good": "#12239E"
+}
+</file>
+
+<file path="Phase2_Working.Report/.platform">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Phase2_Working"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cb8e7932-28ba-4288-a239-60534bfca891"
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition.pbir">
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Phase2_Working.SemanticModel"
+    }
+  }
+}
+</file>
+
+<file path="Phase2_Working.SemanticModel/.pbi/editorSettings.json">
+{
+  "version": "1.0",
+  "autodetectRelationships": true,
+  "parallelQueryLoading": true,
+  "typeDetectionEnabled": true,
+  "relationshipImportEnabled": true,
+  "shouldNotifyUserOfNameConflictResolution": true
+}
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/cultures/en-US.tmdl">
+cultureInfo en-US
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/_Measures.tmdl">
+table _Measures
+	lineageTag: eaaad2b2-3a3b-42db-9d6f-d45fe9c0a9d5
+
+	measure 'Leads Reaching Admission' =
+			
+			DISTINCTCOUNT(FactAdmission[LeadId])
+		formatString: 0
+		lineageTag: 0a838099-8518-4b42-a016-58490dc3785d
+
+	measure 'Leads Reaching Enrollment' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactAdmission[LeadId]),
+			    TREATAS(
+			        VALUES(FactEnrollment[AdmissionApplicationId]),
+			        FactAdmission[AdmissionApplicationId]
+			    )
+			)
+		formatString: 0
+		lineageTag: 2c5cb25c-cf92-4573-9ccc-d71b339b7324
+
+	measure 'Admissions Reaching Enrollment' =
+			
+			DISTINCTCOUNT(FactEnrollment[AdmissionApplicationId])
+		formatString: 0
+		lineageTag: 5ac09151-9dbe-4231-81ac-5b252923f2c2
+
+	measure 'Admission → Enrollment Rate' =
+			
+			DIVIDE(
+			    [Admissions Reaching Enrollment],
+			    [Total Admissions],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 75ecdb5b-3dd7-4f90-ba65-9931f85679a7
+
+	measure 'Contacted Leads' =
+			
+			DISTINCTCOUNT(FactLeadActivity[LeadId])
+		formatString: 0
+		lineageTag: d6038074-d520-43cd-9e9e-f4afd7d2f39c
+
+	measure 'Unattended Leads' =
+			
+			[Total Leads] - [Contacted Leads]
+		formatString: 0
+		lineageTag: 2411967d-7f39-45a0-8a9e-5c95f1634466
+
+	measure 'Total Follow-Ups' =
+			
+			COUNTROWS(FactFollowUp)
+		formatString: 0
+		lineageTag: d82fe36d-1b63-499a-ab89-db33ebeeb7c0
+
+	measure 'Completed Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = TRUE()
+			)
+		formatString: 0
+		lineageTag: db538bbe-d375-4b5b-8780-6654caf7c7d7
+
+	measure 'Pending Follow-Ups' =
+			
+			[Total Follow-Ups] - [Completed Follow-Ups]
+		formatString: 0
+		lineageTag: 79e8779e-58cf-4f0d-a33d-6e4dc01b04d9
+
+	measure 'Follow-Up Completion Rate' =
+			
+			DIVIDE(
+			    [Completed Follow-Ups],
+			    [Total Follow-Ups],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 05c265ab-8a1d-4ff0-9afb-1a15a911ee9c
+
+	measure 'Overdue Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: 5b5473c6-8030-436b-8a1a-127284a8c42b
+
+	measure '61+ Days Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Lead Age Bucket] = "61+ Days"
+			)
+		formatString: 0
+		lineageTag: 3d245e61-c177-4655-9e24-fd6960084675
+
+	measure '0-7 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "0-7 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1e958e8f-1b89-4743-b015-8430ed989863
+
+	measure '8-30 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "8-30 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1f3fbf73-e141-4528-9795-c5f080e5f915
+
+	measure '31-60 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "31-60 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: b78e2470-3898-4901-b569-82e9fa2555fa
+
+	measure 'Admission Done Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "AdmissionDone"
+			)
+		formatString: 0
+		lineageTag: b3fe3fe6-9e77-40d5-a7ab-86b78bb02508
+
+	measure 'Lost Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Lost"
+			)
+		formatString: 0
+		lineageTag: f31a2517-93fe-4742-ae61-892daf5bedb4
+
+	measure 'New Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "New"
+			)
+		formatString: 0
+		lineageTag: 7f0f29c6-3e92-45ae-98dc-58757ebe38b5
+
+	measure 'Interested Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Interested"
+			)
+		formatString: 0
+		lineageTag: a04dcc6d-ec5d-403f-894a-976d0cada129
+
+	measure 'Contacted Status Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] IN {
+			        "FirstCall",
+			        "SecondCall",
+			        "ThirdCall"
+			    }
+			)
+		formatString: 0
+		lineageTag: 5d500843-938b-4e53-905a-3ab829589043
+
+	measure 'Overdue Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: fa29f282-86e9-4807-be37-62f28089b993
+
+	measure 'Pending Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE()
+			)
+		formatString: 0
+		lineageTag: 75d14fb8-560c-4f41-b08f-fcda9ae7ac20
+
+	column Dummy
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dd2ebb6-3f24-4c3c-a7d3-a8cafbf21b9a
+		summarizeBy: sum
+		sourceColumn: Dummy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Dummy = _t]),
+				  #"Changed column type" = Table.TransformColumnTypes(Source, {{"Dummy", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/DimCounsellor.tmdl">
+table DimCounsellor
+	lineageTag: b9ce2e4f-26fe-4a08-8e89-49fde8e3a758
+
+	measure 'Total Admissions' = COUNTROWS(FactAdmission)
+		formatString: 0
+		lineageTag: 75e748a9-48ec-4851-aa96-9186d134a378
+
+	measure 'Total Enrollments' = COUNTROWS(FactEnrollment)
+		formatString: 0
+		lineageTag: 06d018ee-ddef-4a6a-a721-9bfa21ff50cd
+
+	measure 'Admission Conversion Rate' =
+			
+			DIVIDE(
+			    [Leads Reaching Admission],
+			    [Total Leads],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3a36fada-18bc-47aa-b104-72a061004e49
+
+	measure 'Enrollment Conversion Rate' =
+			
+			DIVIDE(
+			    [Leads Reaching Enrollment],
+			    [Total Leads],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 01304ce9-78b3-4242-abb4-d53f50de71fc
+
+	measure 'Total Leads' = DISTINCTCOUNT(FactLead[Id])
+		formatString: 0
+		lineageTag: b4e2ce62-1823-419b-9d3b-9e43fc8ff965
+
+	column UserId
+		dataType: string
+		lineageTag: eeaf2ece-1109-45b0-85c7-d40593339595
+		summarizeBy: none
+		sourceColumn: UserId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: 33c8df8b-32fb-417a-9e9a-df09c5bab59c
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 464fd5ab-f39d-4a42-a9f1-b2297e97d05e
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 4447f382-5016-4be7-bd25-267fe9ea8b99
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 50e54bcc-3630-4cdd-bb42-4f55405c045d
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column CounsellorName
+		dataType: string
+		lineageTag: 47aa7d5d-595a-4ba9-bc74-83b1393261d8
+		summarizeBy: none
+		sourceColumn: CounsellorName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCounsellor = m
+		mode: import
+		source =
+				let
+				    Source = Users
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/DimDate.tmdl">
+table DimDate
+	lineageTag: da22f77f-363b-4c4f-bf5a-e66f34e6ac6b
+
+	column Date
+		formatString: General Date
+		lineageTag: d13a55a3-3d9d-49ce-a890-7cc944fdf717
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 27041e08-41b1-43f7-86e6-52633f3c7301
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: ba1a3825-f86c-4975-81a5-0b27f88798ae
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: e93f476a-3f2d-4726-bd04-90b2965cc090
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month
+		lineageTag: 31e37955-6b22-4cdb-875f-ba5da74d5a46
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year-Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: a47fcc26-f5b8-49b3-9cc8-8865984a1fbd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: 7abe59a5-58fc-4c93-96ba-77efdb42482b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDAR(DATE(2025,1,1), DATE(2026,12,31)),
+				    "Year", YEAR([Date]),
+				    "Month Number", MONTH([Date]),
+				    "Month", FORMAT([Date], "MMMM"),
+				    "Year-Month", FORMAT([Date], "YYYY-MM"),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "Day", DAY([Date])
+				)
+
+	annotation PBI_Id = 487511938e1b44c9b6e86d0e50989a0e
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/DimLeadSource.tmdl">
+table DimLeadSource
+	lineageTag: 563ca5c9-15c1-4377-8461-6b5f4fb36221
+
+	column LeadSource
+		dataType: string
+		lineageTag: 3055dc06-b20f-4ee7-8e91-5f3e0f10cc90
+		summarizeBy: none
+		sourceColumn: LeadSource
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimLeadSource = m
+		mode: import
+		source =
+				let
+				    Source = Leads,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"LeadSource"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/DimProgram.tmdl">
+table DimProgram
+	lineageTag: fb69a30d-78ae-45d3-b0f9-17f53d995c64
+
+	column ProgramId
+		dataType: string
+		lineageTag: e3151c8e-fdf2-4992-a13b-e312c5d11618
+		summarizeBy: none
+		sourceColumn: ProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramCode
+		dataType: string
+		lineageTag: 348725c9-7cbb-456f-b6a0-7cc79713a267
+		summarizeBy: none
+		sourceColumn: ProgramCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramName
+		dataType: string
+		lineageTag: e79a72d5-7e18-47e5-bfdb-57a216f536e0
+		summarizeBy: none
+		sourceColumn: ProgramName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duration
+		dataType: int64
+		formatString: 0
+		lineageTag: 38d6e14c-5df2-4e5b-8607-b3e5db5a5876
+		summarizeBy: none
+		sourceColumn: Duration
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 220b66e3-73a3-4874-a6fb-ab8a1f99f00a
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProgram = m
+		mode: import
+		source =
+				let
+				    Source = Programs
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactAdmission.tmdl">
+table FactAdmission
+	lineageTag: 177051c9-d33e-43f1-ab0c-5c15ccf4ad89
+
+	column AdmissionApplicationId
+		dataType: string
+		lineageTag: 5a90d249-b956-4ff3-a55c-c4cb47fd2fe4
+		summarizeBy: none
+		sourceColumn: AdmissionApplicationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 1bc7b652-092e-43f9-96ef-dd6ba1c8883a
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AppliedProgramId
+		dataType: string
+		lineageTag: 387327c7-9ee5-4a75-9664-f270713488cb
+		summarizeBy: none
+		sourceColumn: AppliedProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationNumber
+		dataType: string
+		lineageTag: f4a05b2c-3016-4758-8773-dbddd314da36
+		summarizeBy: none
+		sourceColumn: ApplicationNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5f3aeb56-88bd-4e1e-8aa5-8ec6e700deb4
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubmittedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f4f6fd2f-7eb2-443c-ac5a-bea11ca177ee
+		summarizeBy: none
+		sourceColumn: SubmittedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApprovedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2f3b1649-12f5-4452-b075-c5c7b431c9e2
+		summarizeBy: none
+		sourceColumn: ApprovedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 028edfe5-0f7d-4806-8e70-505f36cb9ecf
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdmissionDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bfed365e-a6a1-4a84-b381-4764f4684d36
+		summarizeBy: none
+		sourceColumn: AdmissionDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactAdmission = m
+		mode: import
+		source =
+				let
+				    Source = AdmissionApplications,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([CreatedAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "AdmissionDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactEnrollment.tmdl">
+table FactEnrollment
+	lineageTag: 823d1d85-d393-4798-9d91-68e62ae6b513
+
+	column EnrollmentId
+		dataType: string
+		lineageTag: 18b20608-a881-4c39-9d42-322e95b878c6
+		summarizeBy: none
+		sourceColumn: EnrollmentId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdmissionApplicationId
+		dataType: string
+		lineageTag: 4085a1a1-9825-4c40-802d-1443f1bd71eb
+		summarizeBy: none
+		sourceColumn: AdmissionApplicationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgramId
+		dataType: string
+		lineageTag: 843529ae-8aa8-4c73-8641-b76800468e9b
+		summarizeBy: none
+		sourceColumn: ProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column StudentProfileId
+		dataType: string
+		lineageTag: f66df489-b342-4b30-afb3-ce373e0f35d4
+		summarizeBy: none
+		sourceColumn: StudentProfileId
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrolledAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bfb315e3-e290-4f3f-a3da-3827af0e7f83
+		summarizeBy: none
+		sourceColumn: EnrolledAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrollmentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a3ea6f75-30a2-4ee7-877c-f7819ffd400c
+		summarizeBy: none
+		sourceColumn: EnrollmentDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactEnrollment = m
+		mode: import
+		source =
+				let
+				    Source = StudentEnrollments,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([EnrolledAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "EnrollmentDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactFollowUp.tmdl">
+table FactFollowUp
+	lineageTag: dbb2460d-a2e5-4108-9687-70d6fd03f9ef
+
+	column FollowUpId
+		dataType: string
+		lineageTag: a0279354-c8c4-445b-be6b-a31c983d374d
+		summarizeBy: none
+		sourceColumn: FollowUpId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: e25862a0-6b2c-4c92-a80e-d43dccdb02a5
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column FollowUpDateUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9dd1b21b-e37f-4204-938c-19c389d49d86
+		summarizeBy: none
+		sourceColumn: FollowUpDateUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCompleted
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b0ee3362-1073-4c62-abe7-ad7c89af2271
+		summarizeBy: none
+		sourceColumn: IsCompleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		lineageTag: ccb0e2b2-d900-4c97-9475-64dd58924f34
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactFollowUp = m
+		mode: import
+		source =
+				let
+				    Source = LeadFollowUps
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactLead.tmdl">
+table FactLead
+	lineageTag: b545b4a9-bce3-4e25-be68-fba422c269ac
+
+	column Id
+		dataType: string
+		lineageTag: 5a0f50c3-eda5-4091-9334-570a356bb8f3
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadSource
+		dataType: string
+		lineageTag: af9b3363-0509-44e8-ac3e-7547b90f8198
+		summarizeBy: none
+		sourceColumn: LeadSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column AssignedCounsellorId
+		dataType: string
+		lineageTag: 4326aef6-0755-4929-a657-c0e9cc0ea9c1
+		summarizeBy: none
+		sourceColumn: AssignedCounsellorId
+
+		annotation SummarizationSetBy = Automatic
+
+	column InterestedProgramId
+		dataType: string
+		lineageTag: 00c84700-4a38-4cff-a630-c30fa5ec304c
+		summarizeBy: none
+		sourceColumn: InterestedProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 296d68f8-42e5-4acb-84a3-3edc6dca33ed
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: c36d6a8f-844b-4445-8d93-0c79d598f492
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 63e9cba2-2e51-4719-afc0-c885f5d14c81
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 7a51e36d-f9fa-4e2b-8345-392d73e29017
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: ed45c05e-2d07-45a5-a000-10e3ef900b58
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 00be9c44-f0d3-44ff-8bb3-3d0154262c6a
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0bb7781f-7ce2-4160-bbe8-26d975f40ac6
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Lead Age Days' =
+			
+			DATEDIFF(
+			    FactLead[CreatedDate],
+			    TODAY(),
+			    DAY
+			)
+		formatString: 0
+		lineageTag: 51363ec6-6697-4898-9113-d2832b70831d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Age Bucket' =
+			
+			SWITCH(
+			    TRUE(),
+			    FactLead[Lead Age Days] <= 7, "0-7 Days",
+			    FactLead[Lead Age Days] <= 30, "8-30 Days",
+			    FactLead[Lead Age Days] <= 60, "31-60 Days",
+			    "61+ Days"
+			)
+		lineageTag: 55a708a7-63cf-45f6-8574-1a35ce8d81a6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactLead = m
+		mode: import
+		source =
+				let
+				    Source = Leads,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([CreatedAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "CreatedDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactLeadActivity.tmdl">
+table FactLeadActivity
+	lineageTag: 60c139a1-64be-4866-8aac-c21e1aa6016e
+
+	column ActivityId
+		dataType: string
+		lineageTag: f7511316-da63-460e-8165-9b6789940d83
+		summarizeBy: none
+		sourceColumn: ActivityId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 0f331afe-6cfa-4db0-bcbd-638af18d0cba
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActivityType
+		dataType: string
+		lineageTag: 051968c3-9937-4d38-a4ef-ada391255d9e
+		summarizeBy: none
+		sourceColumn: ActivityType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ed30f8b8-52af-4464-838a-47a2048eb4bb
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCompleted
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: baf685a1-40ca-4438-aef1-082eb154c66e
+		summarizeBy: none
+		sourceColumn: IsCompleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column CallDurationSeconds
+		dataType: int64
+		formatString: 0
+		lineageTag: 48b7693e-6e6e-4708-89cf-27e373fb04fe
+		summarizeBy: sum
+		sourceColumn: CallDurationSeconds
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactLeadActivity = m
+		mode: import
+		source =
+				let
+				    Source = LeadActivities
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/tables/FactStatusHistory.tmdl">
+table FactStatusHistory
+	lineageTag: 9bf2db0c-e5ae-4c5a-bdb0-8171947898bd
+
+	column StatusHistoryId
+		dataType: string
+		lineageTag: 6db9a8e2-db23-46a0-9c6e-0c02a94cd68a
+		summarizeBy: none
+		sourceColumn: StatusHistoryId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 8950aa0b-feed-4311-91af-d649bf872379
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column FromStatus
+		dataType: string
+		lineageTag: d8278919-fa37-4121-b3c1-a33277481fdc
+		summarizeBy: none
+		sourceColumn: FromStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column ToStatus
+		dataType: string
+		lineageTag: 9f75a2dd-0443-4ae1-80ef-906e98ac7fb3
+		summarizeBy: none
+		sourceColumn: ToStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column ChangedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d1846a94-f01d-4c48-bfc2-bf884f6a66a0
+		summarizeBy: none
+		sourceColumn: ChangedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column ChangedByUserName
+		dataType: string
+		lineageTag: af45a6ce-d213-4247-8c3e-c238fbb85ff1
+		summarizeBy: none
+		sourceColumn: ChangedByUserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column DaysInPreviousStage
+		dataType: int64
+		formatString: 0
+		lineageTag: 6cf0336c-3e6b-460f-9f2a-08d88c504ece
+		summarizeBy: sum
+		sourceColumn: DaysInPreviousStage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactStatusHistory = m
+		mode: import
+		source =
+				let
+				    Source = LeadStatusHistory
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/database.tmdl">
+database
+	compatibilityLevel: 1600
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/expressions.tmdl">
+expression Leads =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Leads.csv"), [Delimiter = ",", Columns = 10, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Id", type text}, {"LeadSource", type text}, {"AssignedCounsellorId", type text}, {"InterestedProgramId", type text}, {"CreatedAtUtc", type datetime}, {"FirstName", type text}, {"LastName", type text}, {"Email", type text}, {"Phone", type text}, {"Status", type text}}, "en-US"),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Changed column type",{{"CreatedAtUtc", type datetime}}),
+		    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"LeadSource", Text.Trim, type text}}),
+		    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"LeadSource", Text.Clean, type text}}),
+		    #"Trimmed Text1" = Table.TransformColumns(#"Cleaned Text",{{"LeadSource", Text.Trim, type text}}),
+		    #"Cleaned Text1" = Table.TransformColumns(#"Trimmed Text1",{{"LeadSource", Text.Clean, type text}})
+		in
+		  #"Cleaned Text1"
+	lineageTag: 416b7701-57fa-4604-bf9a-f6c6012a50fd
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression AdmissionApplications =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\AdmissionApplications.csv"), [Delimiter = ",", Columns = 8, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"AdmissionApplicationId", type text}, {"LeadId", type text}, {"AppliedProgramId", type text}, {"ApplicationNumber", type text}, {"CreatedAtUtc", type datetime}, {"SubmittedAt", type datetime}, {"ApprovedAt", type datetime}, {"Status", type text}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 767503c0-f49a-4645-9687-d7d714363465
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadActivities =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadActivities.csv"), [Delimiter = ",", Columns = 6, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"ActivityId", type text}, {"LeadId", type text}, {"ActivityType", type text}, {"CreatedAtUtc", type datetime}, {"IsCompleted", type logical}, {"CallDurationSeconds", Int64.Type}}, "en-US"),
+		    #"Removed Duplicates" = Table.Distinct(#"Changed column type")
+		in
+		  #"Removed Duplicates"
+	lineageTag: 251752c6-4046-4ae9-b1a3-d53a8848b721
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadFollowUps =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadFollowUps.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"FollowUpId", type text}, {"LeadId", type text}, {"FollowUpDateUtc", type datetime}, {"IsCompleted", type logical}, {"Notes", type text}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 9fbc3454-ff75-43a4-8327-f69de6cf7d5a
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadStatusHistory =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadStatusHistory.csv"), [Delimiter = ",", Columns = 7, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"StatusHistoryId", type text}, {"LeadId", type text}, {"FromStatus", type text}, {"ToStatus", type text}, {"ChangedAtUtc", type datetime}, {"ChangedByUserName", type text}, {"DaysInPreviousStage", Int64.Type}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 999855c5-a3eb-42d4-b4e4-446cf1972aff
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Programs =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Programs.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"ProgramId", type text}, {"ProgramCode", type text}, {"ProgramName", type text}, {"Duration", Int64.Type}, {"IsActive", type logical}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 84234a40-41e8-4f5c-a2e7-f04f2cdd7748
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression StudentEnrollments =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\StudentEnrollments.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"EnrollmentId", type text}, {"AdmissionApplicationId", type text}, {"ProgramId", type text}, {"StudentProfileId", type text}, {"EnrolledAtUtc", type datetime}}, "en-US"),
+		    #"Merged Queries" = Table.NestedJoin(#"Changed column type", {"AdmissionApplicationId"}, AdmissionApplications, {"AdmissionApplicationId"}, "AdmissionApplications", JoinKind.LeftOuter)
+		in
+		    #"Merged Queries"
+	lineageTag: d87331e7-2fc4-452b-a302-2d45cc1ed65c
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Users =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Users.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"UserId", type text}, {"FirstName", type text}, {"LastName", type text}, {"Email", type text}, {"IsActive", type logical}}, "en-US"),
+		    #"Added Custom" = Table.AddColumn(#"Changed column type", "CounsellorName", each [FirstName] & " " & [LastName])
+		in
+		  #"Added Custom"
+	lineageTag: ba097a72-7429-4df8-9940-7efb2228751c
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/model.tmdl">
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Leads","AdmissionApplications","LeadActivities","LeadFollowUps","LeadStatusHistory","Programs","StudentEnrollments","Users","DimLeadSource","FactLead","FactLeadActivity","FactFollowUp","FactAdmission","FactEnrollment","FactStatusHistory","DimCounsellor","DimProgram","_Measures"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DimLeadSource
+ref table DimDate
+ref table FactLead
+ref table FactLeadActivity
+ref table FactFollowUp
+ref table FactAdmission
+ref table FactEnrollment
+ref table FactStatusHistory
+ref table DimCounsellor
+ref table DimProgram
+ref table _Measures
+
+ref cultureInfo en-US
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition/relationships.tmdl">
+relationship AutoDetected_7c21dbce-b1eb-444c-b8f9-d4ce82fd4ff4
+	fromColumn: FactLead.LeadSource
+	toColumn: DimLeadSource.LeadSource
+
+relationship AutoDetected_6b57a5d8-3a72-48e7-9227-2cf30e0c7e2e
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: FactAdmission.LeadId
+	toColumn: FactFollowUp.LeadId
+
+relationship AutoDetected_c7965678-0baf-4f7f-adaa-82c06fc76d35
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: FactStatusHistory.LeadId
+	toColumn: FactFollowUp.LeadId
+
+relationship AutoDetected_adff4fd8-c76d-4383-932c-69e70be163f9
+	isActive: false
+	fromColumn: FactEnrollment.ProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 80efdfaf-958d-feb7-efa7-cefe658f7289
+	fromColumn: FactLead.AssignedCounsellorId
+	toColumn: DimCounsellor.UserId
+
+relationship 50b6b42d-b0d6-5c98-21ef-89e0b2ed3d10
+	fromColumn: FactLead.InterestedProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 1b27ffff-e061-b315-de57-c5d91e047028
+	isActive: false
+	fromColumn: FactAdmission.AppliedProgramId
+	toColumn: DimProgram.ProgramId
+
+relationship 0e8ca7d7-6996-6c85-57d6-c33f8dde6d7f
+	fromColumn: FactFollowUp.LeadId
+	toColumn: FactLead.Id
+
+relationship 3542fb1a-ad07-5df6-633c-d3638319243e
+	fromColumn: FactAdmission.LeadId
+	toColumn: FactLead.Id
+
+relationship 72805460-e1b9-343d-a49e-231b1d578601
+	fromColumn: FactStatusHistory.LeadId
+	toColumn: FactLead.Id
+
+relationship db56ce10-d62f-af3c-841e-14ff122007f2
+	fromColumn: FactLeadActivity.LeadId
+	toColumn: FactLead.Id
+
+relationship 68496c1d-a9c5-aade-6402-7c180b62efe6
+	fromColumn: FactLead.CreatedDate
+	toColumn: DimDate.Date
+
+relationship 28112676-281e-18f7-5788-7e092f69ba54
+	fromColumn: FactAdmission.AdmissionApplicationId
+	toColumn: FactEnrollment.AdmissionApplicationId
+</file>
+
+<file path="Phase2_Working.SemanticModel/.platform">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Phase2_Working"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f4b572dd-8e8c-4068-b3cc-44cd3b0ae2db"
+  }
+}
+</file>
+
+<file path="Phase2_Working.SemanticModel/definition.pbism">
+{
+  "version": "4.2",
+  "settings": {}
+}
+</file>
+
+<file path="Phase2_Working.SemanticModel/diagramLayout.json">
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 2352.0000348772323,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2272,
+            "y": 332.19444787720812
+          },
+          "nodeIndex": "DimLeadSource",
+          "nodeLineageTag": "563ca5c9-15c1-4377-8461-6b5f4fb36221",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 284.19444787720812
+          },
+          "nodeIndex": "DimDate",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 4055.5959337103641,
+            "y": 272.19444787720812
+          },
+          "nodeIndex": "DimCounsellor",
+          "nodeLineageTag": "b9ce2e4f-26fe-4a08-8e89-49fde8e3a758",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 3821.5959337103641,
+            "y": -10.95342200508037
+          },
+          "nodeIndex": "DimProgram",
+          "nodeLineageTag": "fb69a30d-78ae-45d3-b0f9-17f53d995c64",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 3253.1145225022728,
+            "y": -50
+          },
+          "nodeIndex": "FactAdmission",
+          "nodeLineageTag": "177051c9-d33e-43f1-ab0c-5c15ccf4ad89",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 3537.3811484151111,
+            "y": -12.596339224482904
+          },
+          "nodeIndex": "FactEnrollment",
+          "nodeLineageTag": "823d1d85-d393-4798-9d91-68e62ae6b513",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 3177.0088288164943,
+            "y": 273.527059557173
+          },
+          "nodeIndex": "FactFollowUp",
+          "nodeLineageTag": "dbb2460d-a2e5-4108-9687-70d6fd03f9ef",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 4339.5959337103641,
+            "y": 234.19444787720812
+          },
+          "nodeIndex": "FactLead",
+          "nodeLineageTag": "b545b4a9-bce3-4e25-be68-fba422c269ac",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 2890,
+            "y": 494.38889575441624
+          },
+          "nodeIndex": "FactLeadActivity",
+          "nodeLineageTag": "60c139a1-64be-4866-8aac-c21e1aa6016e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 2930.57683706628,
+            "y": -27.389165524353416
+          },
+          "nodeIndex": "FactStatusHistory",
+          "nodeLineageTag": "9bf2db0c-e5ae-4c5a-bdb0-8171947898bd",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2351.5959337103641,
+            "y": 332.19444787720812
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "eaaad2b2-3a3b-42db-9d6f-d45fe9c0a9d5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
+</file>
+
+<file path="Phase2_Working.pbip">
+{
+  "version": "1.0",
+  "artifacts": [
+    {
+      "report": {
+        "path": "Phase2_Working.Report"
+      }
+    }
+  ],
+  "settings": {
+    "enableAutoRecovery": true
+  }
+}
+</file>
+
+</files>

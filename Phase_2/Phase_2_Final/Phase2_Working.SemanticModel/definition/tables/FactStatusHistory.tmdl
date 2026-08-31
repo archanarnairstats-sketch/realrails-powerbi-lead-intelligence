@@ -1,0 +1,73 @@
+table FactStatusHistory
+	lineageTag: 9bf2db0c-e5ae-4c5a-bdb0-8171947898bd
+
+	column StatusHistoryId
+		dataType: string
+		lineageTag: 6db9a8e2-db23-46a0-9c6e-0c02a94cd68a
+		summarizeBy: none
+		sourceColumn: StatusHistoryId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 8950aa0b-feed-4311-91af-d649bf872379
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column FromStatus
+		dataType: string
+		lineageTag: d8278919-fa37-4121-b3c1-a33277481fdc
+		summarizeBy: none
+		sourceColumn: FromStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column ToStatus
+		dataType: string
+		lineageTag: 9f75a2dd-0443-4ae1-80ef-906e98ac7fb3
+		summarizeBy: none
+		sourceColumn: ToStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column ChangedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d1846a94-f01d-4c48-bfc2-bf884f6a66a0
+		summarizeBy: none
+		sourceColumn: ChangedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column ChangedByUserName
+		dataType: string
+		lineageTag: af45a6ce-d213-4247-8c3e-c238fbb85ff1
+		summarizeBy: none
+		sourceColumn: ChangedByUserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column DaysInPreviousStage
+		dataType: int64
+		formatString: 0
+		lineageTag: 6cf0336c-3e6b-460f-9f2a-08d88c504ece
+		summarizeBy: sum
+		sourceColumn: DaysInPreviousStage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactStatusHistory = m
+		mode: import
+		source =
+				let
+				    Source = LeadStatusHistory
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

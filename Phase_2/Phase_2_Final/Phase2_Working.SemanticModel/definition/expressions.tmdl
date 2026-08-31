@@ -1,0 +1,112 @@
+expression Leads =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Leads.csv"), [Delimiter = ",", Columns = 10, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Id", type text}, {"LeadSource", type text}, {"AssignedCounsellorId", type text}, {"InterestedProgramId", type text}, {"CreatedAtUtc", type datetime}, {"FirstName", type text}, {"LastName", type text}, {"Email", type text}, {"Phone", type text}, {"Status", type text}}, "en-US"),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Changed column type",{{"CreatedAtUtc", type datetime}}),
+		    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"LeadSource", Text.Trim, type text}}),
+		    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"LeadSource", Text.Clean, type text}}),
+		    #"Trimmed Text1" = Table.TransformColumns(#"Cleaned Text",{{"LeadSource", Text.Trim, type text}}),
+		    #"Cleaned Text1" = Table.TransformColumns(#"Trimmed Text1",{{"LeadSource", Text.Clean, type text}})
+		in
+		  #"Cleaned Text1"
+	lineageTag: 416b7701-57fa-4604-bf9a-f6c6012a50fd
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression AdmissionApplications =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\AdmissionApplications.csv"), [Delimiter = ",", Columns = 8, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"AdmissionApplicationId", type text}, {"LeadId", type text}, {"AppliedProgramId", type text}, {"ApplicationNumber", type text}, {"CreatedAtUtc", type datetime}, {"SubmittedAt", type datetime}, {"ApprovedAt", type datetime}, {"Status", type text}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 767503c0-f49a-4645-9687-d7d714363465
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadActivities =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadActivities.csv"), [Delimiter = ",", Columns = 6, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"ActivityId", type text}, {"LeadId", type text}, {"ActivityType", type text}, {"CreatedAtUtc", type datetime}, {"IsCompleted", type logical}, {"CallDurationSeconds", Int64.Type}}, "en-US"),
+		    #"Removed Duplicates" = Table.Distinct(#"Changed column type")
+		in
+		  #"Removed Duplicates"
+	lineageTag: 251752c6-4046-4ae9-b1a3-d53a8848b721
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadFollowUps =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadFollowUps.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"FollowUpId", type text}, {"LeadId", type text}, {"FollowUpDateUtc", type datetime}, {"IsCompleted", type logical}, {"Notes", type text}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 9fbc3454-ff75-43a4-8327-f69de6cf7d5a
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression LeadStatusHistory =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\LeadStatusHistory.csv"), [Delimiter = ",", Columns = 7, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"StatusHistoryId", type text}, {"LeadId", type text}, {"FromStatus", type text}, {"ToStatus", type text}, {"ChangedAtUtc", type datetime}, {"ChangedByUserName", type text}, {"DaysInPreviousStage", Int64.Type}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 999855c5-a3eb-42d4-b4e4-446cf1972aff
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Programs =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Programs.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"ProgramId", type text}, {"ProgramCode", type text}, {"ProgramName", type text}, {"Duration", Int64.Type}, {"IsActive", type logical}}, "en-US")
+		in
+		  #"Changed column type"
+	lineageTag: 84234a40-41e8-4f5c-a2e7-f04f2cdd7748
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression StudentEnrollments =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\StudentEnrollments.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"EnrollmentId", type text}, {"AdmissionApplicationId", type text}, {"ProgramId", type text}, {"StudentProfileId", type text}, {"EnrolledAtUtc", type datetime}}, "en-US"),
+		    #"Merged Queries" = Table.NestedJoin(#"Changed column type", {"AdmissionApplicationId"}, AdmissionApplications, {"AdmissionApplicationId"}, "AdmissionApplications", JoinKind.LeftOuter)
+		in
+		    #"Merged Queries"
+	lineageTag: d87331e7-2fc4-452b-a302-2d45cc1ed65c
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Users =
+		let
+		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Users.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"UserId", type text}, {"FirstName", type text}, {"LastName", type text}, {"Email", type text}, {"IsActive", type logical}}, "en-US"),
+		    #"Added Custom" = Table.AddColumn(#"Changed column type", "CounsellorName", each [FirstName] & " " & [LastName])
+		in
+		  #"Added Custom"
+	lineageTag: ba097a72-7429-4df8-9940-7efb2228751c
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

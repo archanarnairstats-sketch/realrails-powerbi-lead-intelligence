@@ -1,0 +1,98 @@
+table DimCounsellor
+	lineageTag: b9ce2e4f-26fe-4a08-8e89-49fde8e3a758
+
+	measure 'Total Admissions' = COUNTROWS(FactAdmission)
+		formatString: 0
+		lineageTag: 75e748a9-48ec-4851-aa96-9186d134a378
+
+	measure 'Total Enrollments' = COUNTROWS(FactEnrollment)
+		formatString: 0
+		lineageTag: 06d018ee-ddef-4a6a-a721-9bfa21ff50cd
+
+	measure 'Admission Conversion Rate' =
+			
+			DIVIDE(
+			    [Leads Reaching Admission],
+			    [Total Leads],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3a36fada-18bc-47aa-b104-72a061004e49
+
+	measure 'Enrollment Conversion Rate' =
+			
+			DIVIDE(
+			    [Leads Reaching Enrollment],
+			    [Total Leads],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 01304ce9-78b3-4242-abb4-d53f50de71fc
+
+	measure 'Total Leads' = DISTINCTCOUNT(FactLead[Id])
+		formatString: 0
+		lineageTag: b4e2ce62-1823-419b-9d3b-9e43fc8ff965
+
+	column UserId
+		dataType: string
+		lineageTag: eeaf2ece-1109-45b0-85c7-d40593339595
+		summarizeBy: none
+		sourceColumn: UserId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: 33c8df8b-32fb-417a-9e9a-df09c5bab59c
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 464fd5ab-f39d-4a42-a9f1-b2297e97d05e
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 4447f382-5016-4be7-bd25-267fe9ea8b99
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 50e54bcc-3630-4cdd-bb42-4f55405c045d
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column CounsellorName
+		dataType: string
+		lineageTag: 47aa7d5d-595a-4ba9-bc74-83b1393261d8
+		summarizeBy: none
+		sourceColumn: CounsellorName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCounsellor = m
+		mode: import
+		source =
+				let
+				    Source = Users
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

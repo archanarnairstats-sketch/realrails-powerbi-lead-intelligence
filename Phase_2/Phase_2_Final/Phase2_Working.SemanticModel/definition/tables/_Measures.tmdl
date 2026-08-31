@@ -1,0 +1,225 @@
+table _Measures
+	lineageTag: eaaad2b2-3a3b-42db-9d6f-d45fe9c0a9d5
+
+	measure 'Leads Reaching Admission' =
+			
+			DISTINCTCOUNT(FactAdmission[LeadId])
+		formatString: 0
+		lineageTag: 0a838099-8518-4b42-a016-58490dc3785d
+
+	measure 'Leads Reaching Enrollment' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactAdmission[LeadId]),
+			    TREATAS(
+			        VALUES(FactEnrollment[AdmissionApplicationId]),
+			        FactAdmission[AdmissionApplicationId]
+			    )
+			)
+		formatString: 0
+		lineageTag: 2c5cb25c-cf92-4573-9ccc-d71b339b7324
+
+	measure 'Admissions Reaching Enrollment' =
+			
+			DISTINCTCOUNT(FactEnrollment[AdmissionApplicationId])
+		formatString: 0
+		lineageTag: 5ac09151-9dbe-4231-81ac-5b252923f2c2
+
+	measure 'Admission → Enrollment Rate' =
+			
+			DIVIDE(
+			    [Admissions Reaching Enrollment],
+			    [Total Admissions],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 75ecdb5b-3dd7-4f90-ba65-9931f85679a7
+
+	measure 'Contacted Leads' =
+			
+			DISTINCTCOUNT(FactLeadActivity[LeadId])
+		formatString: 0
+		lineageTag: d6038074-d520-43cd-9e9e-f4afd7d2f39c
+
+	measure 'Unattended Leads' =
+			
+			[Total Leads] - [Contacted Leads]
+		formatString: 0
+		lineageTag: 2411967d-7f39-45a0-8a9e-5c95f1634466
+
+	measure 'Total Follow-Ups' =
+			
+			COUNTROWS(FactFollowUp)
+		formatString: 0
+		lineageTag: d82fe36d-1b63-499a-ab89-db33ebeeb7c0
+
+	measure 'Completed Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = TRUE()
+			)
+		formatString: 0
+		lineageTag: db538bbe-d375-4b5b-8780-6654caf7c7d7
+
+	measure 'Pending Follow-Ups' =
+			
+			[Total Follow-Ups] - [Completed Follow-Ups]
+		formatString: 0
+		lineageTag: 79e8779e-58cf-4f0d-a33d-6e4dc01b04d9
+
+	measure 'Follow-Up Completion Rate' =
+			
+			DIVIDE(
+			    [Completed Follow-Ups],
+			    [Total Follow-Ups],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 05c265ab-8a1d-4ff0-9afb-1a15a911ee9c
+
+	measure 'Overdue Follow-Ups' =
+			
+			CALCULATE(
+			    COUNTROWS(FactFollowUp),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: 5b5473c6-8030-436b-8a1a-127284a8c42b
+
+	measure '61+ Days Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Lead Age Bucket] = "61+ Days"
+			)
+		formatString: 0
+		lineageTag: 3d245e61-c177-4655-9e24-fd6960084675
+
+	measure '0-7 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "0-7 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1e958e8f-1b89-4743-b015-8430ed989863
+
+	measure '8-30 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "8-30 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 1f3fbf73-e141-4528-9795-c5f080e5f915
+
+	measure '31-60 Days Leads' =
+			
+			COALESCE(
+			    CALCULATE(
+			        [Total Leads],
+			        FactLead[Lead Age Bucket] = "31-60 Days"
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: b78e2470-3898-4901-b569-82e9fa2555fa
+
+	measure 'Admission Done Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "AdmissionDone"
+			)
+		formatString: 0
+		lineageTag: b3fe3fe6-9e77-40d5-a7ab-86b78bb02508
+
+	measure 'Lost Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Lost"
+			)
+		formatString: 0
+		lineageTag: f31a2517-93fe-4742-ae61-892daf5bedb4
+
+	measure 'New Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "New"
+			)
+		formatString: 0
+		lineageTag: 7f0f29c6-3e92-45ae-98dc-58757ebe38b5
+
+	measure 'Interested Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] = "Interested"
+			)
+		formatString: 0
+		lineageTag: a04dcc6d-ec5d-403f-894a-976d0cada129
+
+	measure 'Contacted Status Leads' =
+			
+			CALCULATE(
+			    [Total Leads],
+			    FactLead[Status] IN {
+			        "FirstCall",
+			        "SecondCall",
+			        "ThirdCall"
+			    }
+			)
+		formatString: 0
+		lineageTag: 5d500843-938b-4e53-905a-3ab829589043
+
+	measure 'Overdue Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE(),
+			    FactFollowUp[FollowUpDateUtc] < TODAY()
+			)
+		formatString: 0
+		lineageTag: fa29f282-86e9-4807-be37-62f28089b993
+
+	measure 'Pending Follow-Up Leads' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(FactFollowUp[LeadId]),
+			    FactFollowUp[IsCompleted] = FALSE()
+			)
+		formatString: 0
+		lineageTag: 75d14fb8-560c-4f41-b08f-fcda9ae7ac20
+
+	column Dummy
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dd2ebb6-3f24-4c3c-a7d3-a8cafbf21b9a
+		summarizeBy: sum
+		sourceColumn: Dummy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Dummy = _t]),
+				  #"Changed column type" = Table.TransformColumnTypes(Source, {{"Dummy", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

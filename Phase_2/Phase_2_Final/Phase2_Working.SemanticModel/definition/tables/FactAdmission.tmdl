@@ -1,0 +1,95 @@
+table FactAdmission
+	lineageTag: 177051c9-d33e-43f1-ab0c-5c15ccf4ad89
+
+	column AdmissionApplicationId
+		dataType: string
+		lineageTag: 5a90d249-b956-4ff3-a55c-c4cb47fd2fe4
+		summarizeBy: none
+		sourceColumn: AdmissionApplicationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadId
+		dataType: string
+		lineageTag: 1bc7b652-092e-43f9-96ef-dd6ba1c8883a
+		summarizeBy: none
+		sourceColumn: LeadId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AppliedProgramId
+		dataType: string
+		lineageTag: 387327c7-9ee5-4a75-9664-f270713488cb
+		summarizeBy: none
+		sourceColumn: AppliedProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationNumber
+		dataType: string
+		lineageTag: f4a05b2c-3016-4758-8773-dbddd314da36
+		summarizeBy: none
+		sourceColumn: ApplicationNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5f3aeb56-88bd-4e1e-8aa5-8ec6e700deb4
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubmittedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f4f6fd2f-7eb2-443c-ac5a-bea11ca177ee
+		summarizeBy: none
+		sourceColumn: SubmittedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApprovedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2f3b1649-12f5-4452-b075-c5c7b431c9e2
+		summarizeBy: none
+		sourceColumn: ApprovedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 028edfe5-0f7d-4806-8e70-505f36cb9ecf
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdmissionDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bfed365e-a6a1-4a84-b381-4764f4684d36
+		summarizeBy: none
+		sourceColumn: AdmissionDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactAdmission = m
+		mode: import
+		source =
+				let
+				    Source = AdmissionApplications,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([CreatedAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "AdmissionDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

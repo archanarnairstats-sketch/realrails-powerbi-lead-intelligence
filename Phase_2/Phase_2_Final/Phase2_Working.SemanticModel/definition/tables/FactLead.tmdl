@@ -1,0 +1,136 @@
+table FactLead
+	lineageTag: b545b4a9-bce3-4e25-be68-fba422c269ac
+
+	column Id
+		dataType: string
+		lineageTag: 5a0f50c3-eda5-4091-9334-570a356bb8f3
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column LeadSource
+		dataType: string
+		lineageTag: af9b3363-0509-44e8-ac3e-7547b90f8198
+		summarizeBy: none
+		sourceColumn: LeadSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column AssignedCounsellorId
+		dataType: string
+		lineageTag: 4326aef6-0755-4929-a657-c0e9cc0ea9c1
+		summarizeBy: none
+		sourceColumn: AssignedCounsellorId
+
+		annotation SummarizationSetBy = Automatic
+
+	column InterestedProgramId
+		dataType: string
+		lineageTag: 00c84700-4a38-4cff-a630-c30fa5ec304c
+		summarizeBy: none
+		sourceColumn: InterestedProgramId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAtUtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 296d68f8-42e5-4acb-84a3-3edc6dca33ed
+		summarizeBy: none
+		sourceColumn: CreatedAtUtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: c36d6a8f-844b-4445-8d93-0c79d598f492
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 63e9cba2-2e51-4719-afc0-c885f5d14c81
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 7a51e36d-f9fa-4e2b-8345-392d73e29017
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: ed45c05e-2d07-45a5-a000-10e3ef900b58
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 00be9c44-f0d3-44ff-8bb3-3d0154262c6a
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0bb7781f-7ce2-4160-bbe8-26d975f40ac6
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Lead Age Days' =
+			
+			DATEDIFF(
+			    FactLead[CreatedDate],
+			    TODAY(),
+			    DAY
+			)
+		formatString: 0
+		lineageTag: 51363ec6-6697-4898-9113-d2832b70831d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Age Bucket' =
+			
+			SWITCH(
+			    TRUE(),
+			    FactLead[Lead Age Days] <= 7, "0-7 Days",
+			    FactLead[Lead Age Days] <= 30, "8-30 Days",
+			    FactLead[Lead Age Days] <= 60, "31-60 Days",
+			    "61+ Days"
+			)
+		lineageTag: 55a708a7-63cf-45f6-8574-1a35ce8d81a6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactLead = m
+		mode: import
+		source =
+				let
+				    Source = Leads,
+				    #"Inserted Date" = Table.AddColumn(Source, "Date", each DateTime.Date([CreatedAtUtc]), type date),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Date",{{"Date", "CreatedDate"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
