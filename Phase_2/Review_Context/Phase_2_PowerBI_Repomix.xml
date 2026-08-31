@@ -40,7 +40,7 @@ The content is organized as follows:
 </file_summary>
 
 <directory_structure>
-[Phase_2/RealRails_Lead_Intelligence_Phase2.Report]/
+[RealRails_Lead_Intelligence_Phase2.Report]/
   definition/
     pages/
       21f7c21bab4791213d2e/
@@ -78,7 +78,7 @@ The content is organized as follows:
   .platform
   definition.pbir
 
-[Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel]/
+[RealRails_Lead_Intelligence_Phase2.SemanticModel]/
   .pbi/
     editorSettings.json
   definition/
@@ -119,7 +119,7 @@ The content is organized as follows:
 <files>
 This section contains the contents of the repository's files.
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/06d259e7b450ee5cd690/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/06d259e7b450ee5cd690/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "06d259e7b450ee5cd690",
@@ -196,7 +196,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/72b4f2f5ef5290462b76/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/72b4f2f5ef5290462b76/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "72b4f2f5ef5290462b76",
@@ -255,7 +255,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/8f366c919f43149f82e3/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/8f366c919f43149f82e3/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "8f366c919f43149f82e3",
@@ -314,7 +314,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a460a9d8e1a6a672b15f/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a460a9d8e1a6a672b15f/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "a460a9d8e1a6a672b15f",
@@ -391,7 +391,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a830ca765afeb38ca9de/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/a830ca765afeb38ca9de/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "a830ca765afeb38ca9de",
@@ -450,7 +450,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/aa9253636db7bd432581/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/aa9253636db7bd432581/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "aa9253636db7bd432581",
@@ -510,7 +510,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "e4c72110ca0b1eacd1de",
@@ -649,7 +649,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f45257eb198e33f844d5/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f45257eb198e33f844d5/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f45257eb198e33f844d5",
@@ -729,7 +729,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f4f14219e66f4dad3f0a/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f4f14219e66f4dad3f0a/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f4f14219e66f4dad3f0a",
@@ -803,7 +803,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f743d410d43f6ecb0592/visual.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/visuals/f743d410d43f6ecb0592/visual.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "f743d410d43f6ecb0592",
@@ -862,7 +862,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/page.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/21f7c21bab4791213d2e/page.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "21f7c21bab4791213d2e",
@@ -873,7 +873,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/pages/pages.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/pages/pages.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
   "pageOrder": [
@@ -883,7 +883,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/report.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/report.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
@@ -950,14 +950,14 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition/version.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition/version.json">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json",
   "version": "2.0.0"
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BaseThemes/CY26SU05.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BaseThemes/CY26SU05.json">
 {
   "name": "CY26SU05",
   "dataColors": [
@@ -1944,7 +1944,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BuiltInThemes/AccessibleDefault.json">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/StaticResources/SharedResources/BuiltInThemes/AccessibleDefault.json">
 {
   "name": "CY23SU02",
   "dataColors": [
@@ -1973,7 +1973,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/.platform">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/.platform">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
@@ -1987,7 +1987,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.Report/definition.pbir">
+<file path="RealRails_Lead_Intelligence_Phase2.Report/definition.pbir">
 {
   "version": "4.0",
   "datasetReference": {
@@ -1998,7 +1998,7 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/.pbi/editorSettings.json">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/.pbi/editorSettings.json">
 {
   "version": "1.0",
   "autodetectRelationships": true,
@@ -2009,11 +2009,11 @@ This section contains the contents of the repository's files.
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/cultures/en-US.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/cultures/en-US.tmdl">
 cultureInfo en-US
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579.tmdl">
 table DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579
 	isHidden
 	isPrivate
@@ -2133,7 +2133,7 @@ table DateTableTemplate_8c0de35c-ab49-4f6f-ab97-19e93e44d579
 	annotation DefaultItem = DateHierarchy
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimCounsellor.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimCounsellor.tmdl">
 table DimCounsellor
 	lineageTag: b9ce2e4f-26fe-4a08-8e89-49fde8e3a758
 
@@ -2233,7 +2233,7 @@ table DimCounsellor
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimDate.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimDate.tmdl">
 table DimDate
 	lineageTag: da22f77f-363b-4c4f-bf5a-e66f34e6ac6b
 
@@ -2319,7 +2319,7 @@ table DimDate
 	annotation PBI_Id = 487511938e1b44c9b6e86d0e50989a0e
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimLeadSource.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimLeadSource.tmdl">
 table DimLeadSource
 	lineageTag: 563ca5c9-15c1-4377-8461-6b5f4fb36221
 
@@ -2346,7 +2346,7 @@ table DimLeadSource
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimProgram.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/DimProgram.tmdl">
 table DimProgram
 	lineageTag: fb69a30d-78ae-45d3-b0f9-17f53d995c64
 
@@ -2405,7 +2405,7 @@ table DimProgram
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactAdmission.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactAdmission.tmdl">
 table FactAdmission
 	lineageTag: 177051c9-d33e-43f1-ab0c-5c15ccf4ad89
 
@@ -2522,7 +2522,7 @@ table FactAdmission
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactEnrollment.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactEnrollment.tmdl">
 table FactEnrollment
 	lineageTag: 823d1d85-d393-4798-9d91-68e62ae6b513
 
@@ -2603,7 +2603,7 @@ table FactEnrollment
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactFollowUp.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactFollowUp.tmdl">
 table FactFollowUp
 	lineageTag: dbb2460d-a2e5-4108-9687-70d6fd03f9ef
 
@@ -2667,7 +2667,7 @@ table FactFollowUp
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLead.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLead.tmdl">
 table FactLead
 	lineageTag: b545b4a9-bce3-4e25-be68-fba422c269ac
 
@@ -2783,7 +2783,7 @@ table FactLead
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLeadActivity.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactLeadActivity.tmdl">
 table FactLeadActivity
 	lineageTag: 60c139a1-64be-4866-8aac-c21e1aa6016e
 
@@ -2856,7 +2856,7 @@ table FactLeadActivity
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactStatusHistory.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/FactStatusHistory.tmdl">
 table FactStatusHistory
 	lineageTag: 9bf2db0c-e5ae-4c5a-bdb0-8171947898bd
 
@@ -2936,7 +2936,7 @@ table FactStatusHistory
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40.tmdl">
 table LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40
 	isHidden
 	showAsVariationsOnly
@@ -3054,7 +3054,7 @@ table LocalDateTable_129718b4-ea84-4aed-b302-76312b46fb40
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59.tmdl">
 table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
 	isHidden
 	showAsVariationsOnly
@@ -3172,7 +3172,7 @@ table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97.tmdl">
 table LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97
 	isHidden
 	showAsVariationsOnly
@@ -3290,7 +3290,7 @@ table LocalDateTable_517fd80d-0f4a-4417-9f51-5c7b4e515e97
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823.tmdl">
 table LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823
 	isHidden
 	showAsVariationsOnly
@@ -3408,7 +3408,7 @@ table LocalDateTable_55a0577d-9f66-48e4-a3e7-2a694f4e8823
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_58db9876-e770-416d-af41-5b2adf760113.tmdl">
 table LocalDateTable_58db9876-e770-416d-af41-5b2adf760113
 	isHidden
 	showAsVariationsOnly
@@ -3526,7 +3526,7 @@ table LocalDateTable_58db9876-e770-416d-af41-5b2adf760113
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b.tmdl">
 table LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b
 	isHidden
 	showAsVariationsOnly
@@ -3644,7 +3644,7 @@ table LocalDateTable_5f996f6b-458d-465d-a653-ecfe4061bc4b
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145.tmdl">
 table LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145
 	isHidden
 	showAsVariationsOnly
@@ -3762,7 +3762,7 @@ table LocalDateTable_a5925412-5bc6-439e-bd5c-bef524b30145
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9.tmdl">
 table LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9
 	isHidden
 	showAsVariationsOnly
@@ -3880,7 +3880,7 @@ table LocalDateTable_aaf7e072-4873-4ffe-94d2-b6de0f17f9a9
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2.tmdl">
 table LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2
 	isHidden
 	showAsVariationsOnly
@@ -3998,7 +3998,7 @@ table LocalDateTable_c829e873-f298-4d8c-b0a6-1e9fea2e41a2
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd.tmdl">
 table LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd
 	isHidden
 	showAsVariationsOnly
@@ -4116,7 +4116,7 @@ table LocalDateTable_d234f3d1-f831-47b4-9be2-e9cb98fcc1fd
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/tables/LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533.tmdl">
 table LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533
 	isHidden
 	showAsVariationsOnly
@@ -4234,12 +4234,12 @@ table LocalDateTable_f26c8368-601f-40b6-b1bf-efcfe2dc5533
 	annotation __PBI_LocalDateTable = true
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/database.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/database.tmdl">
 database
 	compatibilityLevel: 1600
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/expressions.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/expressions.tmdl">
 expression Leads =
 		let
 		  Source = Csv.Document(File.Contents("C:\Users\ARCHANA R NAIR\OneDrive\Desktop\Internship\Phase_1\Leads.csv"), [Delimiter = ",", Columns = 10, QuoteStyle = QuoteStyle.None]),
@@ -4353,7 +4353,7 @@ expression Users =
 	annotation PBI_ResultType = Table
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/model.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/model.tmdl">
 model Model
 	culture: en-US
 	defaultPowerBIDataSourceVersion: powerBI_V3
@@ -4394,7 +4394,7 @@ ref table LocalDateTable_272ec5ec-8a29-4543-8938-03f5fba2eb59
 ref cultureInfo en-US
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/relationships.tmdl">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition/relationships.tmdl">
 relationship b6dacd16-5a3b-49c8-8ca9-fdf3e21bad94
 	joinOnDateBehavior: datePartOnly
 	fromColumn: DimDate.Date
@@ -4511,7 +4511,7 @@ relationship 28112676-281e-18f7-5788-7e092f69ba54
 	toColumn: FactEnrollment.AdmissionApplicationId
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/.platform">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/.platform">
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
@@ -4525,14 +4525,14 @@ relationship 28112676-281e-18f7-5788-7e092f69ba54
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/definition.pbism">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/definition.pbism">
 {
   "version": "4.2",
   "settings": {}
 }
 </file>
 
-<file path="Phase_2/RealRails_Lead_Intelligence_Phase2.SemanticModel/diagramLayout.json">
+<file path="RealRails_Lead_Intelligence_Phase2.SemanticModel/diagramLayout.json">
 {
   "version": "1.1.0",
   "diagrams": [
