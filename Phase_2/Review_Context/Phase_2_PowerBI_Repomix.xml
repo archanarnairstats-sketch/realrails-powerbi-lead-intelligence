@@ -47,6 +47,8 @@ Phase2_Working.Report/
         visuals/
           06d259e7b450ee5cd690/
             visual.json
+          5774444251928c60c51f/
+            visual.json
           72b4f2f5ef5290462b76/
             visual.json
           8f366c919f43149f82e3/
@@ -58,8 +60,6 @@ Phase2_Working.Report/
           aa9253636db7bd432581/
             visual.json
           c083360443b7f86bbcc7/
-            visual.json
-          e4c72110ca0b1eacd1de/
             visual.json
           f4f14219e66f4dad3f0a/
             visual.json
@@ -224,6 +224,165 @@ This section contains the contents of the repository's files.
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "225400ea9ad9a7944cbc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimProgram"
+              }
+            },
+            "Property": "ProgramName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "015a109d137f2f54a483",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FactLead"
+                  }
+                },
+                "Property": "Id"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
+</file>
+
+<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/5774444251928c60c51f/visual.json">
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "5774444251928c60c51f",
+  "position": {
+    "x": 410.29296973148632,
+    "y": 336.19323606760582,
+    "z": 9001,
+    "height": 192.11042061006049,
+    "width": 196.22707248027606,
+    "tabOrder": 9001
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactLead"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "FactLead.Status",
+              "nativeQueryRef": "Status",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "FactLead",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "Status"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Lost'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bb7678a123fabcd407ef",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactLead"
+              }
+            },
+            "Property": "Status"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
 </file>
@@ -595,108 +754,6 @@ This section contains the contents of the repository's files.
         ],
         "isDefaultSort": true
       }
-    },
-    "drillFilterOtherVisuals": true
-  }
-}
-</file>
-
-<file path="Phase2_Working.Report/definition/pages/21f7c21bab4791213d2e/visuals/e4c72110ca0b1eacd1de/visual.json">
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "e4c72110ca0b1eacd1de",
-  "position": {
-    "x": 424.01514263220491,
-    "y": 314.23775942645608,
-    "z": 0,
-    "height": 168.78272667883886,
-    "width": 179.76046499941373,
-    "tabOrder": 0
-  },
-  "visual": {
-    "visualType": "tableEx",
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DimLeadSource"
-                    }
-                  },
-                  "Property": "LeadSource"
-                }
-              },
-              "queryRef": "DimLeadSource.LeadSource",
-              "nativeQueryRef": "LeadSource"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "FactLead"
-                        }
-                      },
-                      "Property": "Id"
-                    }
-                  },
-                  "Function": 2
-                }
-              },
-              "queryRef": "FactLead.Id",
-              "nativeQueryRef": "Count of Id"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "FactLead"
-                      }
-                    },
-                    "Property": "Id"
-                  }
-                },
-                "Function": 2
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
-      }
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   }
@@ -2139,7 +2196,7 @@ This section contains the contents of the repository's files.
     "21f7c21bab4791213d2e",
     "344deb90a8026c89876d"
   ],
-  "activePageName": "344deb90a8026c89876d"
+  "activePageName": "21f7c21bab4791213d2e"
 }
 </file>
 
@@ -3315,7 +3372,14 @@ table _Measures
 
 	measure 'Contacted Leads' =
 			
-			DISTINCTCOUNT(FactLeadActivity[LeadId])
+			CALCULATE(
+			    DISTINCTCOUNT(FactLeadActivity[LeadId]),
+			    FactLeadActivity[ActivityType] IN {
+			        "FirstCall",
+			        "SecondCall",
+			        "ThirdCall"
+			    }
+			)
 		formatString: 0
 		lineageTag: d6038074-d520-43cd-9e9e-f4afd7d2f39c
 
@@ -3510,7 +3574,13 @@ table DimCounsellor
 		formatString: 0
 		lineageTag: 75e748a9-48ec-4851-aa96-9186d134a378
 
-	measure 'Total Enrollments' = COUNTROWS(FactEnrollment)
+	measure 'Total Enrollments' =
+			
+			IF(
+			    SELECTEDVALUE(FactLead[Status]) = "Lost",
+			    BLANK(),
+			    COUNTROWS(FactEnrollment)
+			)
 		formatString: 0
 		lineageTag: 06d018ee-ddef-4a6a-a721-9bfa21ff50cd
 
